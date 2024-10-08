@@ -17,13 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I received M.S. of Geoinformatics from Shenzhen University and B.S. of Mathematics from Chonging University. Now I am working as a Research Assistant in Shenzhen University, School of Architecture and Urban Planning. My supervisor are Dr.Renzhong Guo [[website]](https://www.researchgate.net/profile/Renzhong-Guo) and Dr.Shengjun Tang [[website]](https://shengjuntang.github.io/shengjuntang/).
+I received **M.S. of Geoinformatics** from Shenzhen University and **B.S. of Mathematics** from Chonging University. Now I am working as a Research Assistant in Shenzhen University, School of Architecture and Urban Planning. My supervisor are **Dr.Renzhong Guo** [[website]](https://www.researchgate.net/profile/Renzhong-Guo) and **Dr.Shengjun Tang** [[website]](https://shengjuntang.github.io/shengjuntang/).
 
-My research interests lie at the intersection of advanced artificial intelligence algorithms (such as Deep Neural Networks, Large Language Models, and LLM Agents) and Earth sciences, remote sensing, and ecological studies, with a focus on addressing cutting-edge challenges in these fields. Specifically, my research interests include:
+My research interests lie at the intersection of advanced artificial intelligence (such as Deep Neural Networks, Large Language Models, and LLM Agents) and Earth sciences, remote sensing, and ecological studies, with a focus on addressing cutting-edge challenges in these fields. Specifically, my research interests include:
 
-1. **Developing end-to-end machine learning methods for Earth sciences** that can provide interpretable modeling of spatiotemporal heterogeneity.
-2. **Creating methods to handle the prediction of multimodal spatiotemporal data in Earth sciences**.
-3. **Designing autonomous LLM Agent systems for remote sensing applications**, enabling automated analysis of Earth observation data and enhancing data processing efficiency.
+1. **Developing end-to-end interpretable Earth Sciences Machine Learning methods for modeling of spatiotemporal heterogeneity**
+2. **Developing methods for multimodal spatiotemporal prediction in Earth sciences**.
+3. **Developing LLM Agent systems for remote sensing applications enhancing data processing efficiency**
 
 With four years of research experience and eight published papers, I am dedicated to advancing the integration of AI technologies with Earth sciences to drive innovative solutions and insights.
   
@@ -47,7 +47,7 @@ With four years of research experience and eight published papers, I am dedicate
   </div>
   <div class='paper-box-text' markdown="1">
 
-- Tang, S., `Du, S.`, Wang, W., & Guo, R. (2024). 3D scene graph representation and application for indoor space. *Acta Geodaetica et Cartographica Sinica, 53*(7), Article 1355. https://doi.org/10.11947/j.AGCS.2024.20230482 [[Web]](http://xb.chinasmp.com/CN/abstract/abstract13336.shtml) [[pdf]](http://xb.chinasmp.com/CN/abstract/abstract13336.shtml#1)
+- Tang, S., `Du, S.`, Wang, W., & Guo, R. (2024). 3D scene graph representation and application for indoor space. *Acta Geodaetica et Cartographica Sinica, 53*(7), Article 1355. https://doi.org/10.11947/j.AGCS.2024.20230482 **(Chinese)** [[Web]](http://xb.chinasmp.com/CN/abstract/abstract13336.shtml) [[pdf]](http://xb.chinasmp.com/CN/abstract/abstract13336.shtml#1)
 
   </div>
 </div>
@@ -119,7 +119,7 @@ With four years of research experience and eight published papers, I am dedicate
   </div>
   <div class='paper-box-text' markdown="1">
 
-- Wang, W., Huang, H., `Du, S.`, Li, X., Xie, L., Hong, L., Guo, R., & Tang, S. (2023). High-fidelity 3D reconstruction of tree models for virtual geographic environment construction. *National Remote Sensing Bulletin, 28*(5), 1222-1231. https://doi.org/10.11834/jrs.20232589 [[web]](https://www.ygxb.ac.cn/zh/article/doi/10.11834/jrs.20232589/) [[pdf]](https://www.ygxb.ac.cn/front/front-article/download/35525451/lowqualitypdf/%E9%9D%A2%E5%90%91%E8%99%9A%E6%8B%9F%E5%9C%B0%E7%90%86%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA%E7%9A%84%E6%A0%91%E6%9C%A8%E6%A8%A1%E5%9E%8B%E9%AB%98%E4%BF%9D%E7%9C%9F%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA.pdf)
+- Wang, W., Huang, H., `Du, S.`, Li, X., Xie, L., Hong, L., Guo, R., & Tang, S. (2023). High-fidelity 3D reconstruction of tree models for virtual geographic environment construction. *National Remote Sensing Bulletin, 28*(5), 1222-1231. **(Chinese)** https://doi.org/10.11834/jrs.20232589 [[web]](https://www.ygxb.ac.cn/zh/article/doi/10.11834/jrs.20232589/) [[pdf]](https://www.ygxb.ac.cn/front/front-article/download/35525451/lowqualitypdf/%E9%9D%A2%E5%90%91%E8%99%9A%E6%8B%9F%E5%9C%B0%E7%90%86%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA%E7%9A%84%E6%A0%91%E6%9C%A8%E6%A8%A1%E5%9E%8B%E9%AB%98%E4%BF%9D%E7%9C%9F%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA.pdf)
 
   </div>
 </div>
@@ -144,7 +144,7 @@ With four years of research experience and eight published papers, I am dedicate
 - *2024.06* Shenzhen University Academic Initiation Scholarship
 - *2024.05* SUIADR-KAISA Academic Scholarship
 - *2023.12* ISPRS GSW2023 Best Workshop Presentation Award
-- *2023.10* Chinese National Scholarship
+- *2023.10* **Chinese National Scholarship**
 - *2023.10* Shenzhen University Academic Scholarship
 - *2023.05* SUIADR-KAISA Academic Scholarship
 - *2022.10* Shenzhen University Academic Scholarship
