@@ -39,7 +39,7 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2024</div><img src='images/overall_0412_00.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	Du, S., Wang, W., Guo, R., Wang, R., & Tang, S. (2024). Asymformer: Asymmetrical cross-modal representation learning for mobile platform real-time rgb-d semantic segmentation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 7608-7615).[[Web]](https://openaccess.thecvf.com/content/CVPR2024W/USM/html/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.html) [[Github]] (https://github.com/Fourier7754/AsymFormer) [[pdf]](https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.pdf)
+-	`Du, S.`, Wang, W., Guo, R., Wang, R., & Tang, S. (2024). Asymformer: Asymmetrical cross-modal representation learning for mobile platform real-time rgb-d semantic segmentation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 7608-7615).[[Web]](https://openaccess.thecvf.com/content/CVPR2024W/USM/html/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.html) [[Github]] (https://github.com/Fourier7754/AsymFormer) [[pdf]](https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.pdf)
 
 </div>
 </div>
@@ -47,8 +47,8 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sens. Actuators Phys. 2021</div><img src='images/sna2021.svg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Jian Tang`, Rongbiao Wang, Bocheng Liu, Yihua Kang. A novel magnetic flux leakage method based on the ferromagnetic lift-off layer with through groove. *Sensors and Actuators A: Physical*. 2021: 113091. (JCR:Q1; IF:4.291)  
-[[网页]](https://dx.doi.org/10.1016/j.sna.2021.113091) [[预览]](https://github.com/tangjyan/tangjyan.github.io/blob/main/pdf/TangJ-2021-A%20novel%20magnetic%20flux%20leakage%20method%20based%20on%20the%20ferromagnetic%20lift-off%20layer.pdf) [[下载]](/pdf/TangJ-2021-A%20novel%20magnetic%20flux%20leakage%20method%20based%20on%20the%20ferromagnetic%20lift-off%20layer.pdf)
+-	Wang, W., Li, Y., Huang, H., Hong, L., `Du, S.`, Xie, L., ... & Tang, S. (2023). Branching the limits: Robust 3D tree reconstruction from incomplete laser point clouds. International Journal of Applied Earth Observation and Geoinformation, 125, 103557. (JCR:Q1; IF:7.5)  
+[[web]](https://www.sciencedirect.com/science/article/pii/S1569843223003813#:~:text=However,%20mobile%20laser%203D%20scanning%20systems%20often%20capture#:~:text=However,%20mobile%20laser%203D%20scanning%20systems%20often%20capture) [[pdf]](https://www.sciencedirect.com/science/article/pii/S1569843223003813/pdfft?md5=afa2af933bf3a4aafa35ae4515397437&pid=1-s2.0-S1569843223003813-main.pdf)
 
 </div>
 </div>
@@ -56,8 +56,8 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Int. J. Appl. Electrom. 2020</div><img src='images/ijaem2020.svg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Jian Tang`, Rongbiao Wang, Jikai Zhang, Yihua Kang. The influence of magnetic head’s pose on magnetic flux leakage detection. *International Journal of Applied Electromagnetics and Mechanics*. 2020, 64(1–4): 493–500. (JCR:Q4; IF:0.536)  
-[[网页]](https://dx.doi.org/10.3233/JAE-209356) [[预览]](https://github.com/tangjyan/tangjyan.github.io/blob/main/pdf/TangJ-2020-The%20influence%20of%20magnetic%20head%E2%80%99s%20pose%20on%20magnetic%20flux%20leakage%20detection.pdf) [[下载]](/pdf/TangJ-2020-The%20influence%20of%20magnetic%20head%E2%80%99s%20pose%20on%20magnetic%20flux%20leakage%20detection.pdf)
+-	`Du, S.`, Huang, H., He, F., Luo, H., Yin, Y., Li, X., ... & Tang, S. (2023). Unsupervised stepwise extraction of offshore aquaculture ponds using super-resolution hyperspectral images. International Journal of Applied Earth Observation and Geoinformation, 119, 103326. (JCR:Q1; IF:7.5)  
+[[web]](https://www.sciencedirect.com/science/article/pii/S1569843223001486#:~:text=In%20this%20paper,%20we%20proposed%20an%20unsupervised%20aquaculture#:~:text=In%20this%20paper,%20we%20proposed%20an%20unsupervised%20aquaculture) [[pdf]](https://www.sciencedirect.com/science/article/pii/S1569843223001486/pdfft?md5=a141d29abc76a43665e980ab7ca9d710&pid=1-s2.0-S1569843223001486-main.pdf)
 
 </div>
 </div>
