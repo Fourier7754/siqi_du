@@ -27,13 +27,14 @@ redirect_from:
 
 <span class='anchor' id='-xl'></span>
 
-# 🎓 学历
-- *2021.09 - 2024.6*, <a href="https://www.hust.edu.cn/"><img class="svg" src="/images/HUST_logo.svg" width="23pt"></a> M.S. of GIS 
-- *2017.09 - 2021.06*, <a href="https://www.scu.edu.cn/"><img class="svg" src="/images/SCU_logo.svg" width="20pt"></a> B.S. of Mathematics
+# 🎓 Education
+- *2024.6 - present*, Shenzhen University, Research Assistant
+- *2021.09 - 2024.6*, Shenzhen University, M.S. of GIS 
+- *2017.09 - 2021.06*, Chongqing University, B.S. of Mathematics
  
 <span class='anchor' id='-lwzl'></span>
 
-# 📝 论文专利
+# 📝 Publications and Manuscripts
 
 ### 英文
 ---
@@ -140,6 +141,6 @@ redirect_from:
 
 # 💻 Work Experience
 - *2023.09 - 2023.12*, Teaching Assistant for Course 'Open-Source GIS Software'
-- *2023.04 *, Secretary of Graduate School Entrance Exam
+- *2023.04*, Secretary of Graduate School Entrance Exam
 - *2022.09 - 2022.12*, Teaching Assistant for Course 'Open-Source GIS Software'
 
