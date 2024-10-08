@@ -18,18 +18,15 @@ redirect_from:
 <span class='anchor' id='about-me'></span>
 
 我将博士毕业于湖北武汉的 华中科技大学 机械科学与工程学院，我的导师是康宜华教授。本科毕业于四川成都的 四川大学 制造科学与工程学院（现机械工程学院）。包括合著，我已经发表 20+ 篇学术论文
- <a href='https://scholar.google.com/citations?user=WMkMTb4AAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=引用"></a>。
 
 我的研究领域包括：
 
   
-
-
 <span class='anchor' id='-xl'></span>
 
 # 🎓 Education
-- *2024.6 - present*, Shenzhen University, Research Assistant
-- *2021.09 - 2024.6*, Shenzhen University, M.S. of GIS 
+- *2024.06 - present*, Shenzhen University, Research Assistant
+- *2021.09 - 2024.06*, Shenzhen University, M.S. of GIS 
 - *2017.09 - 2021.06*, Chongqing University, B.S. of Mathematics
  
 <span class='anchor' id='-lwzl'></span>
@@ -39,12 +36,12 @@ redirect_from:
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2024</div><img src='images/overall_0412_00.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Du, S.`, Wang, W., Guo, R., Wang, R., & Tang, S. (2024). Asymformer: Asymmetrical cross-modal representation learning for mobile platform real-time rgb-d semantic segmentation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 7608-7615).[[Web]](https://openaccess.thecvf.com/content/CVPR2024W/USM/html/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.html) [[Github]] (https://github.com/Fourier7754/AsymFormer) [[pdf]](https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.pdf)
+-	`Du, S.`, Wang, W., Guo, R., Wang, R., & Tang, S. (2024). Asymformer: Asymmetrical cross-modal representation learning for mobile platform real-time rgb-d semantic segmentation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 7608-7615).[[Web]](https://openaccess.thecvf.com/content/CVPR2024W/USM/html/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.html) [[Github]](https://github.com/Fourier7754/AsymFormer) [[pdf]](https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.pdf)
 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Sens. Actuators Phys. 2021</div><img src='images/sna2021.svg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JAG</div><img src='images/JAG1.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	Wang, W., Li, Y., Huang, H., Hong, L., `Du, S.`, Xie, L., ... & Tang, S. (2023). Branching the limits: Robust 3D tree reconstruction from incomplete laser point clouds. International Journal of Applied Earth Observation and Geoinformation, 125, 103557. (JCR:Q1; IF:7.5)  
@@ -53,7 +50,7 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Int. J. Appl. Electrom. 2020</div><img src='images/ijaem2020.svg' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JAG</div><img src='images/JAG2.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	`Du, S.`, Huang, H., He, F., Luo, H., Yin, Y., Li, X., ... & Tang, S. (2023). Unsupervised stepwise extraction of offshore aquaculture ponds using super-resolution hyperspectral images. International Journal of Applied Earth Observation and Geoinformation, 119, 103326. (JCR:Q1; IF:7.5)  
@@ -62,33 +59,45 @@ redirect_from:
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS-Archives</div><img src='images/TreeGPT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
 
+-	`Du, S. Q.`, Tang, S. J., Wang, W. X., Li, X. M., & Guo, R. Z. (2023). TREE-GPT: MODULAR LARGE LANGUAGE MODEL EXPERT SYSTEM FOR FOREST REMOTE SENSING IMAGE UNDERSTANDING AND INTERACTIVE ANALYSIS. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 48, 1729-1736.  
+[[web]](https://isprs-archives.copernicus.org/articles/XLVIII-1-W2-2023/1729/2023/) [[pdf]](https://isprs-annals.copernicus.org/articles/V-1-2022/129/2022/isprs-annals-V-1-2022-129-2022.pdf)
 
-### 专利
----
-- 康宜华, `唐健`. 一种基于铁磁性板的缺陷检测方法. [[网页]](https://cprs.patentstar.com.cn/Search/Detail?ANE=9IBC8DFA9GCB8DEA6FAA9HHFCICA1BAA9ACB9EGC9GAA6AAA)
-- 康宜华, `唐健`. 基于电磁原理的倒角测量装置.[[网页]](http://www.wanfangdata.com.cn/details/detail.do?_type=patent&id=CN201921137073.X)
-- 伍剑波, 王杰, 方辉, `唐健`. 一种钢管脉冲磁化漏磁探伤装置. [[网页]](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2016&filename=CN105334260A&v=) 
-- 伍剑波, `唐健`, 王杰, 方辉. 一种基于动生涡电流的金属管件电磁无损检测装置. [[网页]](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2016&filename=CN105510433A&v=) 
-- 刁燕, 陈敏, 王荣彪, `唐健`, 蒲廷燕, 都健. 一种基于绳体拉力传动的机械手. [[网页]](https://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=SCPD&dbname=SCPD2016&filename=CN105773598A&v=) 
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS-Annals</div><img src='images/PSCNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	`Du, S. Q.`, Tang, S. J., Wang, W. X., Li, X. M., Lu, Y. H., & Guo, R. Z. (2022). PSCNET: Efficient RGB-D semantic segmentation parallel network based on spatial and channel attention. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 1, 129-136.  
+[[web]](https://isprs-annals.copernicus.org/articles/V-1-2022/129/2022/) [[pdf]](https://isprs-annals.copernicus.org/articles/V-1-2022/129/2022/isprs-annals-V-1-2022-129-2022.pdf)
+
+</div>
+</div>
+
 
 <span class='anchor' id='-ryjx'></span>
 
 # 🏅 Scholarship and Award
-- *2024.6* Shenzhen University Academic Initiation Scholarship
-- *2024.5* SUIADR-KAISA Academic Scholarship
+- *2024.06* Shenzhen University Academic Initiation Scholarship
+- *2024.05* SUIADR-KAISA Academic Scholarship
 - *2023.12* ISPRS GSW2023 Best Workshop Presentation Award
 - *2023.10* Chinese National Scholarship
 - *2023.10* Shenzhen University Academic Scholarship
-- *2023.5* SUIADR-KAISA Academic Scholarship
+- *2023.05* SUIADR-KAISA Academic Scholarship
 - *2022.10* Shenzhen University Academic Scholarship
 - *2021.10* Shenzhen University Academic Scholarship
-- *2021.6* Chongqing University Best Bachelor Thesis Award
+- *2021.06* Chongqing University Best Bachelor Thesis Award
 
 <span class='anchor' id='-xshy'></span>
 
 # 🏛️ Conference and Presentation
-- *2021.10*, 全国电磁无损检测技术研讨会 暨 中国机械工程学会无损检测分会电磁专业技术大会第十一届第四次全体会议, 陕西西安, 受邀报告
+- *2024.06*, IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024, Topic: Asymformer: Asymmetrical cross-modal representation learning for mobile platform real-time rgb-d semantic segmentation.
+- *2023.09*, ISPRS Geospatial Week 2023, Smart Forest Workshop, Topic: Tree-GPT: Modular Large Language Model Expert System for Forest Remote Sensing Image Understanding and Interactive Analysis
+- *2023.04*, The 2th Summit Forum on Chinese Big Data and Artificial Intelligence Technology in Time and Space, Topic: Unsupervised stepwise extraction of offshore aquaculture ponds using super-resolution hyperspectral images.
+- *2021.10*, XXIV ISPRS Congress, Mobile Mapping Workshop, Topic: PSCNET: Efficient RGB-D semantic segmentation parallel network based on spatial and channel attention
 
 
 <span class='anchor' id='-gzsx'></span>
