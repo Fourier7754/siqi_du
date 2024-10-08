@@ -24,8 +24,6 @@ My research interests lie at the intersection of advanced artificial intelligenc
 1. **Developing end-to-end interpretable Earth Sciences Machine Learning methods for modeling of spatiotemporal heterogeneity**
 2. **Developing methods for multimodal spatiotemporal prediction in Earth sciences**.
 3. **Developing LLM Agent systems for remote sensing applications enhancing data processing efficiency**
-
-With four years of research experience and eight published papers, I am dedicated to advancing the integration of AI technologies with Earth sciences to drive innovative solutions and insights.
   
 <span class='anchor' id='-xl'></span>
 
