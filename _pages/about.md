@@ -17,10 +17,15 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-我将博士毕业于湖北武汉的 华中科技大学 机械科学与工程学院，我的导师是康宜华教授。本科毕业于四川成都的 四川大学 制造科学与工程学院（现机械工程学院）。包括合著，我已经发表 20+ 篇学术论文
+I received M.S. of Geoinformatics from Shenzhen University and B.S. of Mathematics from Chonging University. Now I am working as a Research Assistant in Shenzhen University, School of Architecture and Urban Planning. My supervisor are Dr.Renzhong Guo [[website]](https://www.researchgate.net/profile/Renzhong-Guo) and Dr.Shengjun Tang [[website]](https://shengjuntang.github.io/shengjuntang/).
 
-我的研究领域包括：
+My research interests lie at the intersection of advanced artificial intelligence algorithms (such as Deep Neural Networks, Large Language Models, and LLM Agents) and Earth sciences, remote sensing, and ecological studies, with a focus on addressing cutting-edge challenges in these fields. Specifically, my research interests include:
 
+1. **Developing end-to-end machine learning methods for Earth sciences** that can provide interpretable modeling of spatiotemporal heterogeneity.
+2. **Creating methods to handle the prediction of multimodal spatiotemporal data in Earth sciences**.
+3. **Designing autonomous LLM Agent systems for remote sensing applications**, enabling automated analysis of Earth observation data and enhancing data processing efficiency.
+
+With four years of research experience and eight published papers, I am dedicated to advancing the integration of AI technologies with Earth sciences to drive innovative solutions and insights.
   
 <span class='anchor' id='-xl'></span>
 
@@ -32,9 +37,6 @@ redirect_from:
 <span class='anchor' id='-lwzl'></span>
 
 # 📝 Publications and Manuscripts
-
-
-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGCS</div><img src='images/ChatGraph.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
