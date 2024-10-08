@@ -7,7 +7,7 @@
 
 # Site Settings
 title                    : "Siqi Du (杜思齐)"
-description              : "Academic CV"
+description              : "Research Assistant"
 repository               : "Fourier7754/siqi_du"
 google_scholar_stats_use_cdn : false
 
@@ -22,7 +22,7 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Siqi Du (杜思齐)"
-  avatar           : "images/android-chrome-512x512.png"
+  avatar           : "images/avatar.jpg"
   bio              : "Shenzhen University"
   location         : "Shenzhen Guangdong"
   employer         : #"Hefei General Machinery Research Institute"
