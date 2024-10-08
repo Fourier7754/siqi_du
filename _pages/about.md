@@ -33,10 +33,31 @@ redirect_from:
 
 # 📝 Publications and Manuscripts
 
+
+
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGCS</div><img src='images/ChatGraph.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	Tang, S., `Du, S.`, Wang, W., & Guo, R. (2024). 3D scene graph representation and application for indoor space. Acta Geodaetica et Cartographica Sinica, 53(7), Article 1355. https://doi.org/10.11947/j.AGCS.2024.20230482 [[Web]](http://xb.chinasmp.com/CN/abstract/abstract13336.shtml) [[pdf]](http://xb.chinasmp.com/CN/abstract/abstract13336.shtml#1)
+
+</div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPRW 2024</div><img src='images/overall_0412_00.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	`Du, S.`, Wang, W., Guo, R., Wang, R., & Tang, S. (2024). Asymformer: Asymmetrical cross-modal representation learning for mobile platform real-time rgb-d semantic segmentation. In Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (pp. 7608-7615).[[Web]](https://openaccess.thecvf.com/content/CVPR2024W/USM/html/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.html) [[Github]](https://github.com/Fourier7754/AsymFormer) [[pdf]](https://openaccess.thecvf.com/content/CVPR2024W/USM/papers/Du_AsymFormer_Asymmetrical_Cross-Modal_Representation_Learning_for_Mobile_Platform_Real-Time_RGB-D_CVPRW_2024_paper.pdf)
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS-Archives</div><img src='images/TreeGPT.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+-	`Du, S. Q.`, Tang, S. J., Wang, W. X., Li, X. M., & Guo, R. Z. (2023). TREE-GPT: MODULAR LARGE LANGUAGE MODEL EXPERT SYSTEM FOR FOREST REMOTE SENSING IMAGE UNDERSTANDING AND INTERACTIVE ANALYSIS. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 48, 1729-1736.  
+[[web]](https://isprs-archives.copernicus.org/articles/XLVIII-1-W2-2023/1729/2023/) [[pdf]](https://isprs-annals.copernicus.org/articles/V-1-2022/129/2022/isprs-annals-V-1-2022-129-2022.pdf)
 
 </div>
 </div>
@@ -59,16 +80,17 @@ redirect_from:
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS-Archives</div><img src='images/TreeGPT.png' alt="sym" width="100%"></div></div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NRSB</div><img src='images/NRSB.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
--	`Du, S. Q.`, Tang, S. J., Wang, W. X., Li, X. M., & Guo, R. Z. (2023). TREE-GPT: MODULAR LARGE LANGUAGE MODEL EXPERT SYSTEM FOR FOREST REMOTE SENSING IMAGE UNDERSTANDING AND INTERACTIVE ANALYSIS. The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 48, 1729-1736.  
-[[web]](https://isprs-archives.copernicus.org/articles/XLVIII-1-W2-2023/1729/2023/) [[pdf]](https://isprs-annals.copernicus.org/articles/V-1-2022/129/2022/isprs-annals-V-1-2022-129-2022.pdf)
+-	Wang, W., Huang, H., `Du, S.`, Li, X., Xie, L., Hong, L., Guo, R., & Tang, S. (2023). High-fidelity 3D reconstruction of tree models for virtual geographic environment construction. National Remote Sensing Bulletin, 28(5), 1222-1231. https://doi.org/10.11834/jrs.20232589  
+[[web]](https://www.ygxb.ac.cn/zh/article/doi/10.11834/jrs.20232589/) [[pdf]](https://www.ygxb.ac.cn/front/front-article/download/35525451/lowqualitypdf/%E9%9D%A2%E5%90%91%E8%99%9A%E6%8B%9F%E5%9C%B0%E7%90%86%E7%8E%AF%E5%A2%83%E6%9E%84%E5%BB%BA%E7%9A%84%E6%A0%91%E6%9C%A8%E6%A8%A1%E5%9E%8B%E9%AB%98%E4%BF%9D%E7%9C%9F%E4%B8%89%E7%BB%B4%E9%87%8D%E5%BB%BA.pdf)
 
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS-Annals</div><img src='images/PSCNet.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS-Annals</div><img src='images/PSCNet.jpg' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 -	`Du, S. Q.`, Tang, S. J., Wang, W. X., Li, X. M., Lu, Y. H., & Guo, R. Z. (2022). PSCNET: Efficient RGB-D semantic segmentation parallel network based on spatial and channel attention. ISPRS Annals of the Photogrammetry, Remote Sensing and Spatial Information Sciences, 1, 129-136.  
