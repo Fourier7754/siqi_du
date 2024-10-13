@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I received **M.S. of Geoinformatics** from Shenzhen University and **B.S. of Mathematics** from Chonging University. Now I am working as a Research Assistant in Shenzhen University, School of Architecture and Urban Planning. My supervisor are **Dr.Renzhong Guo** [[website]](https://www.researchgate.net/profile/Renzhong-Guo) and **Dr.Shengjun Tang** [[website]](https://shengjuntang.github.io/shengjuntang/).
+I received **M.S. of Geoinformatics** from Shenzhen University and **B.S. of Mathematics** from Chongqing University. Now I am working as a Research Assistant in Shenzhen University, School of Architecture and Urban Planning. My supervisor are **Dr.Renzhong Guo** [[website]](https://www.researchgate.net/profile/Renzhong-Guo) and **Dr.Shengjun Tang** [[website]](https://shengjuntang.github.io/shengjuntang/).
 
 My research interests lie at the intersection of advanced artificial intelligence (such as Deep Neural Networks, Large Language Models, and LLM Agents) and Earth sciences, remote sensing, and ecological studies, with a focus on addressing cutting-edge challenges in these fields. Specifically, my research interests include:
 
