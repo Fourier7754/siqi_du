@@ -28,10 +28,10 @@ My research interests lie at the intersection of advanced artificial intelligenc
 <span class='anchor' id='-xl'></span>
 
 # 🎓 Education
-- *2024.04 - present*, Peking University, Research Assistant
-- *2024.06 - 2025.03*, Shenzhen University, Research Assistant
-- *2021.09 - 2024.06*, Shenzhen University, M.S. of GIS 
-- *2017.09 - 2021.06*, Chongqing University, B.S. of Mathematics
+- *2025.04 - present*, Peking University, Research Assistant, Supervisor: Dr.Shuangcheng Li
+- *2024.06 - 2025.03*, Shenzhen University, Research Assistant, Supervisor: Dr.Shengjun Tang
+- *2021.09 - 2024.06*, Shenzhen University, M.S. of GIS, Supervisor: Dr.Renzhong Guo
+- *2017.09 - 2021.06*, Chongqing University, B.S. of Mathematics, Supervisor: Dr.Li Zeng
  
 <span class='anchor' id='-lwzl'></span>
 
