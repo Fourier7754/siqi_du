@@ -28,7 +28,8 @@ My research interests lie at the intersection of advanced artificial intelligenc
 <span class='anchor' id='-xl'></span>
 
 # 🎓 Education
-- *2024.06 - present*, Shenzhen University, Research Assistant
+- *2024.04 - present*, Peking University, Research Assistant
+- *2024.06 - 2025.03*, Shenzhen University, Research Assistant
 - *2021.09 - 2024.06*, Shenzhen University, M.S. of GIS 
 - *2017.09 - 2021.06*, Chongqing University, B.S. of Mathematics
  
