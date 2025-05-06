@@ -134,24 +134,19 @@ My research interests lie at the intersection of advanced artificial intelligenc
 <span class='anchor' id='-xshy'></span>
 
 # 🏛️ Conference and Presentation
-- **2025.04**  
-  *ISPRS Geospatial Week 2025, Smart Forest Workshop*  
+- **2025.04** — _ISPRS Geospatial Week 2025, Smart Forest Workshop_  
   **Topic:** An Interpretable Implicit-Based Approach for Modeling Local Spatial Effects: A Case Study of Global Gross Primary Productivity
 
-- **2024.06**  
-  *IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024*  
+- **2024.06** — _IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024_  
   **Topic:** Asymformer: Asymmetrical Cross-Modal Representation Learning for Mobile-Platform Real-Time RGB-D Semantic Segmentation
 
-- **2023.09**  
-  *ISPRS Geospatial Week 2023, Smart Forest Workshop*  
+- **2023.09** — _ISPRS Geospatial Week 2023, Smart Forest Workshop_  
   **Topic:** Tree-GPT: Modular Large Language Model Expert System for Forest Remote Sensing Image Understanding and Interactive Analysis
 
-- **2023.04**  
-  *2nd Summit Forum on Chinese Big Data & AI Technology in Time and Space*  
+- **2023.04** — _2nd Summit Forum on Chinese Big Data & AI Technology in Time and Space_  
   **Topic:** Unsupervised Stepwise Extraction of Offshore Aquaculture Ponds Using Super-Resolution Hyperspectral Images
 
-- **2021.10**  
-  *XXIV ISPRS Congress, Mobile Mapping Workshop*  
+- **2021.10** — _XXIV ISPRS Congress, Mobile Mapping Workshop_  
   **Topic:** PSCNET: Efficient RGB-D Semantic Segmentation Parallel Network Based on Spatial and Channel Attention
 
 
