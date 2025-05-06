@@ -27,14 +27,14 @@ My research interests lie at the intersection of advanced artificial intelligenc
   
 <span class='anchor' id='-xl'></span>
 
-# 🎓 Education
+# 🎓 Education & Research Experience
 
-| 时间               | 学校                  | 职位/学位                | 导师                   |
-|--------------------|-----------------------|---------------------------|------------------------|
-| 2025.04 – Present  | Peking University     | Research Assistant        | _Dr. Shuangcheng Li_   |
-| 2024.06 – 2025.03  | Shenzhen University   | Research Assistant        | _Dr. Shengjun Tang_    |
-| 2021.09 – 2024.06  | Shenzhen University   | M.S. in GIS               | _Dr. Renzhong Guo_     |
-| 2017.09 – 2021.06  | Chongqing University  | B.S. in Mathematics       | _Dr. Li Zeng_          |
+| Period               | Institution             | Role / Degree            | Supervisor                | Research Interests                                                            |
+|----------------------|-------------------------|--------------------------|---------------------------|-------------------------------------------------------------------------------|
+| 2025.04 – Present    | Peking University       | Research Assistant       | _Dr. Shuangcheng Li_      | Geographical Machine Learning<br>Land Carbon Sink Steady-State Transition Analysis |
+| 2024.06 – 2025.03    | Shenzhen University     | Research Assistant       | _Dr. Shengjun Tang_       | AI4Science<br>Natural Language Processing<br>Geographical Machine Learning    |
+| 2021.09 – 2024.06    | Shenzhen University     | M.S. in GIS              | _Dr. Renzhong Guo_        | Multimodal Scene Understanding<br>Natural Language Processing                 |
+| 2017.09 – 2021.06    | Chongqing University    | B.S. in Mathematics      | _Dr. Li Zeng_             | Statistical Machine Learning<br>Remote Sensing Image Processing<br>Semantic Segmentation |
  
 <span class='anchor' id='-lwzl'></span>
 
