@@ -40,6 +40,21 @@ My research interests lie at the intersection of advanced artificial intelligenc
 
 # 📝 Publications and Manuscripts
 
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">ArXiv</div>
+      <img src='images/GPP_Implicit.png' alt="Local Spatial Effects Model" width="100%">
+    </div>
+  </div>
+  <div class='paper-box-text' markdown="1">
+
+- Du, S., `Huang, H.`, Shen, K., Liu, Z., & Tang, S. (2025). An Interpretable Implicit-Based Approach for Modeling Local Spatial Effects: A Case Study of Global Gross Primary Productivity. arXiv:2502.06170. [[Web]](https://arxiv.org/abs/2502.06170) [[pdf]](https://arxiv.org/pdf/2502.06170)
+
+  </div>
+</div>
+
+
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AGCS</div><img src='images/ChatGraph.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
