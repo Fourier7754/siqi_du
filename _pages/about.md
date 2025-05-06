@@ -121,6 +121,7 @@ My research interests lie at the intersection of advanced artificial intelligenc
 <span class='anchor' id='-ryjx'></span>
 
 # 🏅 Scholarship and Award
+- *2024.06* **Shenzhen University Outstanding Graduate**
 - *2024.06* Shenzhen University Academic Initiation Scholarship
 - *2024.05* SUIADR-KAISA Academic Scholarship
 - *2023.12* ISPRS GSW2023 Best Workshop Presentation Award
@@ -129,7 +130,7 @@ My research interests lie at the intersection of advanced artificial intelligenc
 - *2023.05* SUIADR-KAISA Academic Scholarship
 - *2022.10* Shenzhen University Academic Scholarship
 - *2021.10* Shenzhen University Academic Scholarship
-- *2021.06* Chongqing University Best Bachelor Thesis Award
+- *2021.06* **Chongqing University Best Bachelor Thesis Award**
 
 <span class='anchor' id='-xshy'></span>
 
