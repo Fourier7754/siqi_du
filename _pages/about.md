@@ -43,7 +43,7 @@ My research interests lie at the intersection of advanced artificial intelligenc
 <div class='paper-box'>
   <div class='paper-box-image'>
     <div>
-      <div class="badge">ArXiv</div>
+      <div class="badge">GSW2025</div>
       <img src='images/GPP_Implicit.png' alt="Local Spatial Effects Model" width="100%">
     </div>
   </div>
@@ -134,6 +134,7 @@ My research interests lie at the intersection of advanced artificial intelligenc
 <span class='anchor' id='-xshy'></span>
 
 # 🏛️ Conference and Presentation
+- *2025.04*, ISPRS Geospatial Week 2025, Smart Forest Workshop, Topic: An Interpretable Implicit-Based Approach for Modeling Local Spatial Effects: A Case Study of Global Gross Primary Productivity
 - *2024.06*, IEEE/CVF Conference on Computer Vision and Pattern Recognition 2024, Topic: Asymformer: Asymmetrical cross-modal representation learning for mobile platform real-time rgb-d semantic segmentation.
 - *2023.09*, ISPRS Geospatial Week 2023, Smart Forest Workshop, Topic: Tree-GPT: Modular Large Language Model Expert System for Forest Remote Sensing Image Understanding and Interactive Analysis
 - *2023.04*, The 2th Summit Forum on Chinese Big Data and Artificial Intelligence Technology in Time and Space, Topic: Unsupervised stepwise extraction of offshore aquaculture ponds using super-resolution hyperspectral images.
@@ -142,7 +143,7 @@ My research interests lie at the intersection of advanced artificial intelligenc
 
 <span class='anchor' id='-gzsx'></span>
 
-# 💻 Work Experience
+# 💻 Teaching Experience
 - *2023.09 - 2023.12*, Teaching Assistant for Course 'Open-Source GIS Software'
 - *2023.04*, Secretary of Graduate School Entrance Exam
 - *2022.09 - 2022.12*, Teaching Assistant for Course 'Open-Source GIS Software'
