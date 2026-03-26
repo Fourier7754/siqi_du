@@ -35,8 +35,3 @@ end
 
 
 gem "webrick", "~> 1.7"
-
-# Ruby 3.4+ / 4.x: bundled default gems must be in Gemfile or `bundle exec` cannot require them.
-gem "csv"
-gem "base64"
-gem "bigdecimal"

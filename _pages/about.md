@@ -17,39 +17,14 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<div class="intro-lead" markdown="1">
+I received **M.S. of Geoinformatics** from Shenzhen University and **B.S. of Mathematics** from Chongqing University. Now I am working as a Research Assistant in Shenzhen University, School of Architecture and Urban Planning. My supervisors are **Dr.Renzhong Guo** [[website]](https://www.researchgate.net/profile/Renzhong-Guo) and **Dr.Shengjun Tang** [[website]](https://shengjuntang.github.io/shengjuntang/).
 
-I am a **Research Assistant** at **Peking University**, working in **Dr. Shuangcheng Li**'s research group ([faculty homepage](https://ues.pku.edu.cn/Home/Teacher_Home/Shuangcheng_Li/f7bb9f88cfb4427db71df35a2456ec9d.htm)).
+My research interests lie at the intersection of advanced artificial intelligence (such as Deep Neural Networks, Large Language Models, and LLM Agents) and Earth sciences, remote sensing, and ecological studies, with a focus on addressing cutting-edge challenges in these fields. Specifically, my research interests include:
 
-</div>
-
-I received **M.S. of Geoinformatics** from Shenzhen University and **B.S. of Mathematics** from Chongqing University. Previously I was a Research Assistant at Shenzhen University, School of Architecture and Urban Planning. My supervisors are **Dr.Renzhong Guo** [[website]](https://www.researchgate.net/profile/Renzhong-Guo) and **Dr. Shengjun Tang** [[website]](https://shengjuntang.github.io/shengjuntang/).
-
-I work at the intersection of artificial intelligence (deep learning, LLMs, and agents) and Earth sciences, remote sensing, and ecology.
-
-<span class='anchor' id='research-interests'></span>
-
-# 🔬 Research Interests
-
-<div class="interest-grid" markdown="0">
-  <div class="interest-card interest-card--blue">
-    <h3 class="interest-card__title">Agent Harness</h3>
-    <p class="interest-card__desc">How to build efficient, reliable intelligent agent systems—from orchestration to deployment.</p>
-  </div>
-  <div class="interest-card interest-card--purple">
-    <h3 class="interest-card__title">Agent Computation Graph</h3>
-    <p class="interest-card__desc">Using computation graphs to manage memory efficiently and reduce inference cost during agent reasoning.</p>
-  </div>
-  <div class="interest-card interest-card--teal">
-    <h3 class="interest-card__title">Implicit Representation Learning</h3>
-    <p class="interest-card__desc">Mapping physical-world properties into implicit representations that neural networks can learn, query, and compose.</p>
-  </div>
-  <div class="interest-card interest-card--orange">
-    <h3 class="interest-card__title">Efficient Representation Learning</h3>
-    <p class="interest-card__desc">Lightweight representation learning for on-device and edge deployment with minimal latency and energy use.</p>
-  </div>
-</div>
-
+1. **Developing end-to-end interpretable Earth Sciences Machine Learning methods for modeling of spatiotemporal heterogeneity**
+2. **Developing methods for multimodal spatiotemporal prediction in Earth sciences**.
+3. **Developing LLM Agent systems for remote sensing applications enhancing data processing efficiency**
+  
 <span class='anchor' id='-xl'></span>
 
 # 🎓 Education & Research Experience
@@ -64,20 +39,6 @@ I work at the intersection of artificial intelligence (deep learning, LLMs, and 
 <span class='anchor' id='-lwzl'></span>
 
 # 📝 Publications and Manuscripts
-
-<div class='paper-box'>
-  <div class='paper-box-image'>
-    <div>
-      <div class="badge">JLPPI</div>
-      <img src='images/paper_placeholder_shen2025_jlp.svg' alt="Publication placeholder" width="100%">
-    </div>
-  </div>
-  <div class='paper-box-text' markdown="1">
-
-- Shen, K., Lan, M., `Du, S.`, Bai, Y., Wu, J., & Weng, W. (2025). Process safety risk assessment against natural disasters: A cross-system scenario analysis perspective. *Journal of Loss Prevention in the Process Industries*, 100, Article 105905. [[DOI]](https://doi.org/10.1016/j.jlp.2025.105905) [[ScienceDirect]](https://www.sciencedirect.com/science/article/pii/S0950423025003651)
-
-</div>
-</div>
 
 <div class='paper-box'>
   <div class='paper-box-image'>

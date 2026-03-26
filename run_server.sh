@@ -1,7 +1,1 @@
-#!/usr/bin/env bash
-set -euo pipefail
-ROOT="$(cd "$(dirname "$0")" && pwd)"
-export LANG="${LANG:-en_US.UTF-8}"
-export LC_ALL="${LC_ALL:-en_US.UTF-8}"
-export RUBYOPT="-r${ROOT}/lib/ruby40_liquid_compat.rb${RUBYOPT:+ ${RUBYOPT}}"
-exec bundle exec jekyll serve --livereload
+bundle exec jekyll serve --livereload

@@ -120,10 +120,6 @@
    $medium-wide                : 900px !default;
    $large                      : 925px !default;
    $x-large                    : 1280px !default;
-
-   /* Shared layout shell (masthead + main + footer alignment) */
-   $site-shell-max             : $x-large;
-   $site-shell-padding         : clamp(1rem, 4vw, 1.75rem);
    
    /*
       Grid

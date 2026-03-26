@@ -33,7 +33,6 @@
 @import "page";
 @import "archive";
 @import "sidebar";
-@import "layout-shell";
 
 @import "vendor/font-awesome/fontawesome";
 @import "vendor/font-awesome/solid";
@@ -42,51 +41,50 @@
 @import "print";
 
 .paper-box {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    align-items: start;
-    gap: 1.25em;
-    border-bottom: 0;
-    padding: 1.25em 1.5em;
-    margin: 1.5em 0;
-    background: var(--apple-surface);
-    border: 1px solid var(--apple-border-soft);
-    border-radius: 22px;
-    box-shadow: none;
-    overflow: hidden;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px #efefef solid;
+    padding: 2em 0 2em 0;
+    
 
-    .paper-box-image {
-        display: flex;
+    .paper-box-image{
         justify-content: center;
-        min-width: 0;
-
+        display: flex;
+        width: 100%;
+        order: 2;
         img {
-            width: 100%;
             max-width: 400px;
-            height: auto;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
-            border-radius: 18px;
-            border: 1px solid var(--apple-border-soft);
+            box-shadow: 3px 3px 6px #888;
             object-fit: cover;
         }
     }
-
-    .paper-box-text {
-        min-width: 0;
+    
+    .paper-box-text{
+        max-width: 100%;
+        order: 1;
     }
-
+    
     @include breakpoint($medium) {
-        grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
-        column-gap: 1.5em;
-
-        .paper-box-image {
-            justify-content: flex-start;
+        .paper-box-image{
+            justify-content: left;
+            min-width: 200px;
+            max-width: 40%;
+            order: 1;
+        }
+        
+        .paper-box-text{
+            justify-content: left;
+            padding-left: 2em;
+            max-width: 60%;
+            order: 2;
         }
 
-        .paper-box-text {
-            padding-left: 0;
-        }
     }
+
+
 }
 
 $scroll_offset : 2em;
@@ -106,10 +104,6 @@ h1:before, .anchor:before {
     margin-top: .5em;
     margin-left: -.5em;
     color: white;
-    background-color: var(--apple-accent-strong);
+    background-color: #00369f;
     font-size: .8em;
-    border-radius: 9999px;
 }
-
-/* Apple minimal theme overrides (light/dark + component polish) */
-@import "apple";
