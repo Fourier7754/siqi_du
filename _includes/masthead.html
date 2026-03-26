@@ -5,13 +5,13 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg masthead__menu-home-item">
-            <a href="https://fourier7754.github.io/siqi_du/" target="_self">
-              <img class="svg" src="/images/favicon-32x32.png" width="20pt">
+            <a href="{{ '/' | relative_url }}" target="_self">
+              <img class="svg" src="{{ '/images/favicon-32x32.png' | relative_url }}" width="20pt">
               Homepage
             </a>
           </li>
           {% for link in site.data.navigation.main %}
-            <li class="masthead__menu-item"><a href="https://fourier7754.github.io/siqi_du/">{{ link.title }}</a></li>
+            <li class="masthead__menu-item"><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>

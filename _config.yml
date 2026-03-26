@@ -8,6 +8,8 @@
 # Site Settings
 title                    : "Siqi Du (杜思齐)"
 description              : "Research Assistant (AI4Science)"
+url                      : "https://fourier7754.github.io"
+baseurl                  : "/siqi_du"
 repository               : "Fourier7754/siqi_du"
 google_scholar_stats_use_cdn : false
 
