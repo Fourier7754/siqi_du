@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="appleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A84FF"/>
+      <stop offset="45%" stop-color="#5E5CE6"/>
+      <stop offset="100%" stop-color="#30D158"/>
+    </linearGradient>
+    <filter id="softShadow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-opacity="0.22"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="1600" height="900" rx="36" ry="36" fill="url(#appleGrad)" filter="url(#softShadow)"/>
+</svg>

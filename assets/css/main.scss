@@ -1,0 +1,115 @@
+---
+---
+
+/*
+ *    Minimal Mistakes Jekyll Theme
+ *
+ *  - Michael Rose
+ *  - mademistakes.com
+ *  - https://twitter.com/mmistakes
+ *
+*/
+
+@import "vendor/breakpoint/breakpoint"; // media query mixins
+@import "variables";
+@import "mixins";
+@import "vendor/susy/susy";
+
+@import "reset";
+@import "base";
+
+@import "utilities";
+@import "animations";
+@import "tables";
+@import "buttons";
+@import "notices";
+@import "masthead";
+@import "navigation";
+@import "footer";
+@import "syntax";
+
+@import "forms";
+
+@import "page";
+@import "archive";
+@import "sidebar";
+@import "layout-shell";
+
+@import "vendor/font-awesome/fontawesome";
+@import "vendor/font-awesome/solid";
+@import "vendor/font-awesome/brands";
+@import "vendor/magnific-popup/magnific-popup";
+@import "print";
+
+.paper-box {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 1.25em;
+    border-bottom: 0;
+    padding: 1.25em 1.5em;
+    margin: 1.5em 0;
+    background: var(--apple-surface);
+    border: 1px solid var(--apple-border-soft);
+    border-radius: 22px;
+    box-shadow: none;
+    overflow: hidden;
+
+    .paper-box-image {
+        display: flex;
+        justify-content: center;
+        min-width: 0;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+            border-radius: 18px;
+            border: 1px solid var(--apple-border-soft);
+            object-fit: cover;
+        }
+    }
+
+    .paper-box-text {
+        min-width: 0;
+    }
+
+    @include breakpoint($medium) {
+        grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+        column-gap: 1.5em;
+
+        .paper-box-image {
+            justify-content: flex-start;
+        }
+
+        .paper-box-text {
+            padding-left: 0;
+        }
+    }
+}
+
+$scroll_offset : 2em;
+h1:before, .anchor:before { 
+    content: ''; 
+    display: block; 
+    position: relative; 
+    width: 0; 
+    height: $scroll_offset; 
+    margin-top: -$scroll_offset;
+}
+
+.badge {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    position: absolute;
+    margin-top: .5em;
+    margin-left: -.5em;
+    color: white;
+    background-color: var(--apple-accent-strong);
+    font-size: .8em;
+    border-radius: 9999px;
+}
+
+/* Apple minimal theme overrides (light/dark + component polish) */
+@import "apple";
