@@ -216,8 +216,9 @@ img{max-width:100%;display:block;}
 .post-back:hover{color:var(--text);}
 
 /* 博客专用侧边栏（博客页不放个人信息，改放分类/tag 导航） */
-.blog-side-title{font-family:var(--fh);font-weight:700;font-size:var(--fs-title);letter-spacing:-.02em;}
-.blog-side-title:hover{text-decoration:underline;}
+.blog-side-title{font-family:var(--fh);font-weight:700;font-size:var(--fs-title);letter-spacing:-.02em;line-height:1.15;}
+.blog-side-title a{color:var(--text);}
+.blog-side-title a:hover{text-decoration:underline;}
 .blog-side-section{margin-top:28px;}
 .blog-side-label{
   font-size:var(--fs-meta);color:var(--faint);
