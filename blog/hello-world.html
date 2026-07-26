@@ -39,6 +39,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
+<script src="posts.js" defer></script>
+<script src="../assets/js/blog.js" defer></script>
 <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
@@ -60,35 +62,40 @@
 
 <div class="layout">
 
-  <aside class="sidebar">
-    <img class="sidebar-avatar" src="../images/avatar.jpg" alt="Siqi Du">
-    <div>
-      <div class="sidebar-name">Siqi Du</div>
-      <div class="sidebar-name-cn">杜思齐</div>
-      <div class="sidebar-role">Research Assistant<br>Peking University</div>
-    </div>
-    <ul class="sidebar-links">
-      <li><a href="mailto:siqi.du1014@outlook.com">Email</a></li>
-      <li><a href="https://scholar.google.com/citations?user=-pFuGAoAAAAJ&hl=zh-TW" target="_blank" rel="noopener">Google Scholar</a></li>
-      <li><a href="https://github.com/Fourier7754" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://www.researchgate.net/profile/Siqi-Du-4" target="_blank" rel="noopener">ResearchGate</a></li>
-      <li><a href="https://orcid.org/0000-0002-1387-3084" target="_blank" rel="noopener">ORCID</a></li>
-    </ul>
+  <aside class="sidebar blog-sidebar">
+    <a class="blog-side-title" href="index.html">Blog</a>
+    <div class="blog-side-nav"></div>
+    <noscript>
+      <div class="blog-side-section">
+        <div class="blog-side-label">Categories</div>
+        <div class="blog-side-cats">
+          <a class="blog-side-cat" href="index.html"><span>All</span></a>
+          <a class="blog-side-cat" href="index.html?cat=Benchmark"><span>Benchmark</span></a>
+          <a class="blog-side-cat" href="index.html?cat=Research"><span>Research</span></a>
+          <a class="blog-side-cat" href="index.html?cat=Opinion"><span>Opinion</span></a>
+          <a class="blog-side-cat" href="index.html?cat=Review"><span>Review</span></a>
+        </div>
+      </div>
+    </noscript>
   </aside>
 
   <main class="content">
     <a class="post-back" href="index.html">← Back to Blog</a>
     <h1 class="page-title">Hello World</h1>
-    <div class="post-meta" style="font-size:var(--fs-meta);color:var(--faint);margin-bottom:8px;">2026-07-22</div>
-    <div class="post-taxonomy">
-      <a class="cat-badge" href="index.html?cat=Opinion">Opinion</a>
-      <a class="tag-chip" href="index.html?tag=meta">#meta</a>
-    </div>
+    <div class="post-meta" style="font-size:var(--fs-meta);color:var(--faint);margin-bottom:24px;">2026-07-22</div>
 
     <div class="post-body">
       <p>Hello World.</p>
       <p>This blog is officially open. I will use this space to write notes on agent systems, AI4Science, representation learning, and the everyday workflow of doing research—things that are too informal for a paper but worth writing down.</p>
       <p>More posts are on the way.</p>
+    </div>
+
+    <div class="post-end">
+      <div class="post-end-sep"></div>
+      <div class="post-taxonomy">
+        <a class="cat-badge" href="index.html?cat=Opinion">Opinion</a>
+        <a class="tag-chip" href="index.html?tag=meta">#meta</a>
+      </div>
     </div>
 
   </main>

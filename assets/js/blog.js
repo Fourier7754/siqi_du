@@ -1,6 +1,9 @@
-/* 博客列表页：渲染文章列表 + 分类/tag 组合过滤。
+/* 博客侧边栏 + 列表过滤。
    数据来自 blog/posts.js 的 window.POSTS（必须先于本脚本加载）。
-   过滤状态双向同步到 URL query：?cat=Opinion&tag=llm&tag=agents
+   两种模式：
+   - 列表页（存在 .post-list）：侧边栏分类/tag 渲染为按钮，点击就地过滤，
+     状态同步 URL query（?cat=Opinion&tag=llm），加载时从 URL 恢复。
+   - 文章页（无 .post-list）：侧边栏渲染为普通链接，跳回列表页对应过滤态。
    分类单选（All 为默认）；tag 多选，命中任一已选 tag 即显示；分类与 tag 取交集。 */
 (function () {
   var CATEGORIES = ["Benchmark", "Research", "Opinion", "Review"];
@@ -9,11 +12,11 @@
     return a.date < b.date ? 1 : -1;
   });
 
-  var filterBar = document.querySelector(".filter-bar");
   var listEl = document.querySelector(".post-list");
-  if (!filterBar || !listEl) return;
+  var navEl = document.querySelector(".blog-side-nav");
+  var isIndex = !!listEl;
 
-  /* 从 URL 恢复过滤态 */
+  /* 从 URL 恢复过滤态（仅列表页有意义） */
   var params = new URLSearchParams(location.search);
   var state = {
     cat: params.get("cat") || "",
@@ -21,13 +24,25 @@
   };
   if (state.cat && CATEGORIES.indexOf(state.cat) === -1) state.cat = "";
 
-  /* 收集全部 tag（去重，按出现顺序） */
+  /* 全部 tag（去重，按出现顺序） */
   var allTags = [];
   posts.forEach(function (p) {
     (p.tags || []).forEach(function (t) {
       if (allTags.indexOf(t) === -1) allTags.push(t);
     });
   });
+
+  function countCat(c) {
+    if (c === "") return posts.length;
+    return posts.filter(function (p) { return p.category === c; }).length;
+  }
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
 
   function syncURL() {
     var p = new URLSearchParams();
@@ -43,36 +58,51 @@
     return state.tags.some(function (t) { return (p.tags || []).indexOf(t) !== -1; });
   }
 
-  function el(tag, cls, text) {
-    var e = document.createElement(tag);
-    if (cls) e.className = cls;
-    if (text !== undefined) e.textContent = text;
-    return e;
-  }
+  /* 侧边栏：列表页渲染按钮（就地过滤），文章页渲染链接 */
+  function renderSidebar() {
+    if (!navEl) return;
+    navEl.innerHTML = "";
 
-  function renderFilterBar() {
-    filterBar.innerHTML = "";
-
-    var catRow = el("div", "filter-row cats");
+    var catSec = el("div", "blog-side-section");
+    catSec.appendChild(el("div", "blog-side-label", "Categories"));
+    var catBox = el("div", "blog-side-cats");
     [""].concat(CATEGORIES).forEach(function (c) {
       var label = c === "" ? "All" : c;
-      var btn = el("button", "cat-tab" + (state.cat === c ? " active" : ""), label);
-      btn.type = "button";
-      btn.setAttribute("data-cat", c);
-      catRow.appendChild(btn);
+      var item;
+      if (isIndex) {
+        item = el("button", "blog-side-cat" + (state.cat === c ? " active" : ""));
+        item.type = "button";
+        item.setAttribute("data-cat", c);
+      } else {
+        item = el("a", "blog-side-cat");
+        item.href = c === "" ? "index.html" : "index.html?cat=" + encodeURIComponent(c);
+      }
+      item.appendChild(el("span", "", label));
+      item.appendChild(el("span", "count", String(countCat(c))));
+      catBox.appendChild(item);
     });
-    filterBar.appendChild(catRow);
+    catSec.appendChild(catBox);
+    navEl.appendChild(catSec);
 
     if (allTags.length) {
-      var tagRow = el("div", "filter-row tags");
+      var tagSec = el("div", "blog-side-section");
+      tagSec.appendChild(el("div", "blog-side-label", "Tags"));
+      var tagBox = el("div", "blog-side-tags");
       allTags.forEach(function (t) {
         var on = state.tags.indexOf(t) !== -1;
-        var btn = el("button", "tag-chip" + (on ? " active" : ""), "#" + t);
-        btn.type = "button";
-        btn.setAttribute("data-tag", t);
-        tagRow.appendChild(btn);
+        var chip;
+        if (isIndex) {
+          chip = el("button", "tag-chip" + (on ? " active" : ""), "#" + t);
+          chip.type = "button";
+          chip.setAttribute("data-tag", t);
+        } else {
+          chip = el("a", "tag-chip", "#" + t);
+          chip.href = "index.html?tag=" + encodeURIComponent(t);
+        }
+        tagBox.appendChild(chip);
       });
-      filterBar.appendChild(tagRow);
+      tagSec.appendChild(tagBox);
+      navEl.appendChild(tagSec);
     }
   }
 
@@ -81,8 +111,7 @@
     var shown = posts.filter(match);
 
     if (!shown.length) {
-      var empty = el("li", "post-empty", "No posts match the current filters.");
-      listEl.appendChild(empty);
+      listEl.appendChild(el("li", "post-empty", "No posts match the current filters."));
       return;
     }
 
@@ -111,21 +140,26 @@
     });
   }
 
-  filterBar.addEventListener("click", function (e) {
-    var btn = e.target.closest("button");
-    if (!btn) return;
-    if (btn.hasAttribute("data-cat")) {
-      state.cat = btn.getAttribute("data-cat");
-    } else if (btn.hasAttribute("data-tag")) {
-      var t = btn.getAttribute("data-tag");
-      var i = state.tags.indexOf(t);
-      if (i === -1) state.tags.push(t); else state.tags.splice(i, 1);
-    }
-    syncURL();
-    renderFilterBar();
-    renderList();
-  });
+  renderSidebar();
 
-  renderFilterBar();
-  renderList();
+  if (isIndex) {
+    var sidebar = document.querySelector(".blog-sidebar");
+    if (sidebar) {
+      sidebar.addEventListener("click", function (e) {
+        var btn = e.target.closest("button");
+        if (!btn) return;
+        if (btn.hasAttribute("data-cat")) {
+          state.cat = btn.getAttribute("data-cat");
+        } else if (btn.hasAttribute("data-tag")) {
+          var t = btn.getAttribute("data-tag");
+          var i = state.tags.indexOf(t);
+          if (i === -1) state.tags.push(t); else state.tags.splice(i, 1);
+        }
+        syncURL();
+        renderSidebar();
+        renderList();
+      });
+    }
+    renderList();
+  }
 })();

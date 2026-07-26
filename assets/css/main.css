@@ -215,20 +215,28 @@ img{max-width:100%;display:block;}
 .post-back{display:inline-block;margin-bottom:24px;font-size:var(--fs-meta);color:var(--muted);}
 .post-back:hover{color:var(--text);}
 
-/* 博客分类/tag 过滤条：文字式 tab + #tag 文字链，底部通栏分隔线 */
-.filter-bar{margin:20px 0 8px;padding-bottom:14px;border-bottom:1px solid var(--border);}
-.filter-row{display:flex;flex-wrap:wrap;align-items:center;}
-.filter-row + .filter-row{margin-top:10px;}
-.filter-row.cats{gap:18px;}
-.filter-row.tags{gap:14px;}
-.filter-label{font-size:var(--fs-meta);color:var(--faint);}
-.cat-tab{
-  font-family:var(--fb);font-size:var(--fs-body);font-weight:500;
-  padding:2px 0;cursor:pointer;border:none;background:none;
-  color:var(--muted);border-bottom:2px solid transparent;
+/* 博客专用侧边栏（博客页不放个人信息，改放分类/tag 导航） */
+.blog-side-title{font-family:var(--fh);font-weight:700;font-size:var(--fs-title);letter-spacing:-.02em;}
+.blog-side-title:hover{text-decoration:underline;}
+.blog-side-section{margin-top:28px;}
+.blog-side-label{
+  font-size:var(--fs-meta);color:var(--faint);
+  letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px;
 }
-.cat-tab:hover{color:var(--text);}
-.cat-tab.active{color:var(--text);border-bottom-color:var(--accent);}
+.blog-side-cats{display:flex;flex-direction:column;}
+.blog-side-cat{
+  display:flex;justify-content:space-between;align-items:baseline;
+  padding:8px 0;border:none;border-bottom:1px solid var(--border);
+  background:none;cursor:pointer;font-family:var(--fb);text-align:left;
+  font-size:var(--fs-body);color:var(--muted);
+}
+.blog-side-cat:last-child{border-bottom:none;}
+.blog-side-cat:hover{color:var(--text);text-decoration:none;}
+.blog-side-cat.active{color:var(--text);font-weight:600;}
+.blog-side-cat .count{font-size:var(--fs-meta);color:var(--faint);font-weight:400;}
+.blog-side-tags{display:flex;flex-wrap:wrap;gap:6px 14px;}
+
+/* tag 文字链（过滤/列表 meta/文章页文末共用） */
 .tag-chip{
   display:inline;font-family:var(--fb);font-size:var(--fs-meta);
   padding:0;cursor:pointer;border:none;background:none;
@@ -237,11 +245,15 @@ img{max-width:100%;display:block;}
 .tag-chip:hover{color:var(--text);text-decoration:underline;text-underline-offset:3px;}
 .tag-chip.active{color:var(--text);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
 
-/* 列表项与文章页内的分类/tag 展示 */
+/* 列表项 meta 与空态 */
 .post-list .post-cat{color:var(--faint);}
 .post-list .post-cat:hover{color:var(--text);}
 .post-empty{font-size:var(--fs-body);color:var(--muted);}
-.post-taxonomy{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:24px;}
+
+/* 文章页文末：短分隔线（不通栏）+ 分类/tag */
+.post-end{margin-top:40px;}
+.post-end-sep{width:48px;border-top:1px solid var(--border);}
+.post-taxonomy{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:14px;}
 .cat-badge{
   display:inline-block;background:var(--accent);color:var(--on-accent);
   font-size:var(--fs-meta);font-weight:600;letter-spacing:.05em;
@@ -286,4 +298,7 @@ img{max-width:100%;display:block;}
   .paper-img{max-width:320px;}
   .interests{grid-template-columns:1fr;}
   .entry{grid-template-columns:1fr;gap:4px;}
+  .blog-sidebar{flex-direction:column;align-items:stretch;}
+  .blog-side-nav{width:100%;}
+  .blog-side-section{margin-top:20px;}
 }
