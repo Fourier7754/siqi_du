@@ -9,6 +9,14 @@
    注意：必须用 .js（window.POSTS）而非 .json，file:// 下浏览器拦截 fetch。 */
 window.POSTS = [
   {
+    slug: "conceptual-thinking-reflection",
+    title: "A Reflection on Conceptual Thinking",
+    date: "2026-07-26",
+    excerpt: "On how the Agent field advances through conceptualization, and a skill that STEM training leaves out.",
+    category: "Opinion",
+    tags: ["reflection", "conceptual-thinking", "interdisciplinary", "agent-research"]
+  },
+  {
     slug: "hello-world",
     title: "Hello World",
     date: "2026-07-22",
