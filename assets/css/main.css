@@ -215,6 +215,34 @@ img{max-width:100%;display:block;}
 .post-back{display:inline-block;margin-bottom:24px;font-size:var(--fs-meta);color:var(--muted);}
 .post-back:hover{color:var(--text);}
 
+/* 博客分类/tag 过滤条 */
+.filter-bar{margin:16px 0 8px;}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:10px;}
+.filter-row:last-child{margin-bottom:0;}
+.filter-label{font-size:var(--fs-meta);color:var(--faint);}
+.cat-tab,.tag-chip{
+  display:inline-block;font-family:var(--fb);font-size:var(--fs-meta);font-weight:500;
+  letter-spacing:.03em;padding:4px 12px;cursor:pointer;
+  border:1px solid var(--border);border-radius:var(--radius-sm);
+  color:var(--text);background:var(--surface);
+}
+.cat-tab:hover,.tag-chip:hover{text-decoration:none;border-color:var(--text);}
+.cat-tab.active,.tag-chip.active{background:var(--accent);color:var(--on-accent);border-color:var(--accent);}
+.tag-chip{padding:2px 8px;}
+
+/* 列表项与文章页内的分类/tag 展示 */
+.post-list .post-cat{color:var(--faint);}
+.post-list .post-cat:hover{color:var(--text);}
+.post-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px;}
+.post-empty{font-size:var(--fs-body);color:var(--muted);}
+.post-taxonomy{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:24px;}
+.cat-badge{
+  display:inline-block;background:var(--accent);color:var(--on-accent);
+  font-size:var(--fs-meta);font-weight:600;letter-spacing:.05em;
+  padding:2px 8px;border-radius:var(--radius-sm);
+}
+.cat-badge:hover{text-decoration:none;}
+
 /* ---------- 页脚 ---------- */
 .footer{
   border-top:1px solid var(--border);

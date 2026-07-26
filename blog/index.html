@@ -24,6 +24,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
+<script src="posts.js" defer></script>
+<script src="../assets/js/blog.js" defer></script>
 <script src="../assets/js/main.js" defer></script>
 </head>
 <body>
@@ -64,13 +66,17 @@
   <main class="content">
     <h1 class="page-title">Blog</h1>
 
-    <ul class="post-list">
-      <li>
-        <a class="post-title" href="hello-world.html">Hello World</a>
-        <div class="post-meta">2026-07-22</div>
-        <div class="post-excerpt">This blog is officially open. Notes on agent systems, AI4Science, and research workflows will appear here.</div>
-      </li>
-    </ul>
+    <div class="filter-bar"></div>
+    <ul class="post-list"></ul>
+    <noscript>
+      <ul class="post-list">
+        <li>
+          <a class="post-title" href="hello-world.html">Hello World</a>
+          <div class="post-meta">2026-07-22 · Opinion</div>
+          <div class="post-excerpt">This blog is officially open. Notes on agent systems, AI4Science, and research workflows will appear here.</div>
+        </li>
+      </ul>
+    </noscript>
 
   </main>
 </div>
