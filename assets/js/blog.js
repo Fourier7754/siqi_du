@@ -53,7 +53,7 @@
   function renderFilterBar() {
     filterBar.innerHTML = "";
 
-    var catRow = el("div", "filter-row");
+    var catRow = el("div", "filter-row cats");
     [""].concat(CATEGORIES).forEach(function (c) {
       var label = c === "" ? "All" : c;
       var btn = el("button", "cat-tab" + (state.cat === c ? " active" : ""), label);
@@ -64,12 +64,10 @@
     filterBar.appendChild(catRow);
 
     if (allTags.length) {
-      var tagRow = el("div", "filter-row");
-      var label = el("span", "filter-label", "Tags:");
-      tagRow.appendChild(label);
+      var tagRow = el("div", "filter-row tags");
       allTags.forEach(function (t) {
         var on = state.tags.indexOf(t) !== -1;
-        var btn = el("button", "tag-chip" + (on ? " active" : ""), t);
+        var btn = el("button", "tag-chip" + (on ? " active" : ""), "#" + t);
         btn.type = "button";
         btn.setAttribute("data-tag", t);
         tagRow.appendChild(btn);
@@ -100,17 +98,13 @@
       var catLink = el("a", "post-cat", p.category);
       catLink.href = "index.html?cat=" + encodeURIComponent(p.category);
       meta.appendChild(catLink);
+      (p.tags || []).forEach(function (t) {
+        meta.appendChild(document.createTextNode(" · "));
+        var chip = el("a", "tag-chip", "#" + t);
+        chip.href = "index.html?tag=" + encodeURIComponent(t);
+        meta.appendChild(chip);
+      });
       li.appendChild(meta);
-
-      if (p.tags && p.tags.length) {
-        var tagLine = el("div", "post-tags");
-        p.tags.forEach(function (t) {
-          var chip = el("a", "tag-chip", t);
-          chip.href = "index.html?tag=" + encodeURIComponent(t);
-          tagLine.appendChild(chip);
-        });
-        li.appendChild(tagLine);
-      }
 
       li.appendChild(el("div", "post-excerpt", p.excerpt));
       listEl.appendChild(li);
