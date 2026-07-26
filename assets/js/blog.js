@@ -142,6 +142,45 @@
 
   renderSidebar();
 
+  /* GoatCounter Top Viewed：公开 counter API 按文章拉计数，取前 5。
+     路径必须与 GoatCounter 记录的一致（/siqi_du/blog/<slug>.html）。
+     全部文章计数为 0 或请求失败时不渲染该板块；本地 file:// 跳过。 */
+  var GC_CODE = "fourier7754";
+  var GC_PATH_PREFIX = "/siqi_du/blog/";
+
+  function renderTopViewed() {
+    if (!navEl || !posts.length || location.protocol === "file:") return;
+    Promise.all(posts.map(function (p) {
+      var path = GC_PATH_PREFIX + p.slug + ".html";
+      return fetch("https://" + GC_CODE + ".goatcounter.com/counter/" + encodeURIComponent(path) + ".json")
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (j) {
+          /* count 是带千分位逗号的格式化字符串（如 "1,234"），先剥离非数字再解析 */
+          var n = j ? (parseInt(String(j.count).replace(/[^0-9]/g, ""), 10) || 0) : 0;
+          return { post: p, n: n };
+        })
+        .catch(function () { return { post: p, n: 0 }; });
+    })).then(function (rows) {
+      var top = rows.filter(function (r) { return r.n > 0; })
+        .sort(function (a, b) { return b.n - a.n; })
+        .slice(0, 5);
+      if (!top.length) return;
+      var sec = el("div", "blog-side-section");
+      sec.appendChild(el("div", "blog-side-label", "Top Viewed"));
+      var box = el("div", "blog-side-top");
+      top.forEach(function (r) {
+        var a = el("a", "", r.post.title);
+        a.href = r.post.slug + ".html";
+        a.appendChild(el("span", "count", String(r.n)));
+        box.appendChild(a);
+      });
+      sec.appendChild(box);
+      navEl.insertBefore(sec, navEl.children[1] || null);
+    }).catch(function () {});
+  }
+
+  renderTopViewed();
+
   if (isIndex) {
     var sidebar = document.querySelector(".blog-sidebar");
     if (sidebar) {

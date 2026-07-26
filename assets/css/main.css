@@ -236,6 +236,15 @@ img{max-width:100%;display:block;}
 .blog-side-cat.active{color:var(--text);font-weight:600;}
 .blog-side-cat .count{font-size:var(--fs-meta);color:var(--faint);font-weight:400;}
 .blog-side-tags{display:flex;flex-wrap:wrap;gap:6px 14px;}
+.blog-side-top{display:flex;flex-direction:column;}
+.blog-side-top a{
+  display:flex;justify-content:space-between;align-items:baseline;gap:10px;
+  padding:8px 0;border-bottom:1px solid var(--border);
+  font-size:var(--fs-body);color:var(--muted);
+}
+.blog-side-top a:last-child{border-bottom:none;}
+.blog-side-top a:hover{color:var(--text);text-decoration:none;}
+.blog-side-top .count{font-size:var(--fs-meta);color:var(--faint);flex-shrink:0;}
 
 /* tag 文字链（过滤/列表 meta/文章页文末共用） */
 .tag-chip{
