@@ -238,6 +238,12 @@ img{max-width:100%;display:block;}
 .post-body ul,.post-body ol{margin:0 0 14px 20px;}
 .post-body a{text-decoration:underline;text-underline-offset:2px;}
 .post-body img{border-radius:var(--radius);border:1px solid var(--border);}
+.post-tldr{
+  background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);
+  padding:14px 16px;margin-bottom:18px;
+}
+.post-tldr-label{font-size:var(--fs-meta);font-weight:600;color:var(--text);letter-spacing:.04em;margin-bottom:6px;}
+.post-tldr p{margin-bottom:0;}
 .post-back{display:inline-block;margin-bottom:24px;font-size:var(--fs-meta);color:var(--muted);}
 .post-back:hover{color:var(--text);}
 
