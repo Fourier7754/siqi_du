@@ -39,9 +39,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/main.css">
+<script src="../assets/vendor/highlight.min.js" defer></script>
 <script src="posts.js" defer></script>
 <script src="../assets/js/blog.js" defer></script>
 <script src="../assets/js/main.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.hljs) hljs.highlightAll();
+});
+</script>
 <script>
 /* GoatCounter 访问量统计：仅线上加载，本地 file:// 预览不计数 */
 if (location.protocol === "https:") {
@@ -98,6 +104,22 @@ if (location.protocol === "https:") {
       <p>Hello World.</p>
       <p>This blog is officially open. I will use this space to write notes on agent systems, AI4Science, representation learning, and the everyday workflow of doing research—things that are too informal for a paper but worth writing down.</p>
       <p>More posts are on the way.</p>
+      <h2>Hello, World, over the years</h2>
+      <p>Every programmer starts here. Then things get out of hand.</p>
+      <pre><code class="language-python"># Year 1: "Programming is easy."
+print("Hello, World!")
+
+# Year 5: "We should make this extensible."
+class Greeting(ABC):
+    @abstractmethod
+    def render(self) -> str: ...
+
+class GreetingFactory:
+    @staticmethod
+    def create(locale: str = "en") -> Greeting:
+        return {"en": EnglishGreeting}.get(locale, EnglishGreeting)()
+
+# Year 10: print("Hello, World!")</code></pre>
     </div>
 
     <div class="post-end">

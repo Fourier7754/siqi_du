@@ -19,3 +19,39 @@ document.addEventListener('click', function (e) {
 window.addEventListener('pageshow', function (e) {
   if (e.persisted) document.body.classList.remove('page-leave');
 });
+
+/* 代码块复制按钮：给 .post-body 内每个 pre 加右上角 Copy 按钮 */
+document.querySelectorAll('.post-body pre').forEach(function (pre) {
+  var btn = document.createElement('button');
+  btn.type = 'button';
+  btn.className = 'copy-btn';
+  btn.textContent = 'Copy';
+  btn.addEventListener('click', function () {
+    var code = pre.querySelector('code');
+    var text = (code || pre).textContent;
+    function done() {
+      btn.textContent = 'Copied';
+      btn.classList.add('copied');
+      setTimeout(function () {
+        btn.textContent = 'Copy';
+        btn.classList.remove('copied');
+      }, 1500);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(done, function () { fallback(); });
+    } else {
+      fallback();
+    }
+    function fallback() {
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.opacity = '0';
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand('copy'); done(); } catch (err) { }
+      document.body.removeChild(ta);
+    }
+  });
+  pre.appendChild(btn);
+});

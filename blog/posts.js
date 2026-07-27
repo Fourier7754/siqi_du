@@ -10,9 +10,9 @@
 window.POSTS = [
   {
     slug: "conceptual-thinking-reflection",
-    title: "A Reflection on Conceptual Thinking",
+    title: "Some of the Agent Era's Biggest Advances Are Conceptual, Not Technical: From MCP to Skills",
     date: "2026-07-26",
-    excerpt: "On how the Agent field advances through conceptualization, and a skill that STEM training leaves out.",
+    excerpt: "Some of the Agent era's biggest advances—MCP, skills, self-iterative agents—are conceptual, not technical. On the skill that STEM training leaves out.",
     category: "Opinion",
     tags: ["reflection", "conceptual-thinking", "interdisciplinary", "agent-research"]
   },
