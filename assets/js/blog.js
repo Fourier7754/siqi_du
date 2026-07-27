@@ -127,12 +127,6 @@
       var catLink = el("a", "post-cat", p.category);
       catLink.href = "index.html?cat=" + encodeURIComponent(p.category);
       meta.appendChild(catLink);
-      (p.tags || []).forEach(function (t) {
-        meta.appendChild(document.createTextNode(" · "));
-        var chip = el("a", "tag-chip", "#" + t);
-        chip.href = "index.html?tag=" + encodeURIComponent(t);
-        meta.appendChild(chip);
-      });
       li.appendChild(meta);
 
       li.appendChild(el("div", "post-excerpt", p.excerpt));
