@@ -65,6 +65,22 @@
     <h1 class="page-title">Publications</h1>
 
     <div class="paper">
+      <div class="paper-img"><img src="images/VISTA-GS.png" alt="VISTA-GS virtual view augmentation framework" loading="lazy"></div>
+      <div>
+        <span class="paper-badge">ISPRS-Archives</span>
+        <div class="paper-title">VISTA-GS: MVS-Guided Virtual View Augmentation for Sparse-View 3D Gaussian Splatting</div>
+        <div class="paper-authors">Huang, H., Li, Y., Tang, S., <strong>Du, S.</strong>, Mahmoud, M., Adham, M., &amp; Chen, W.</div>
+        <div class="paper-venue">The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences, XLIX-B2-2026, 421–427, 2026</div>
+        <div class="paper-abstract">3D Gaussian Splatting (3DGS) has emerged as a leading technique for novel view synthesis (NVS), yet its performance degrades drastically under sparse-view conditions. While existing methods have sought to address this by incorporating accurate 3D geometry via Multi-View Stereo (MVS) or LiDAR priors, the view-dependent appearance parameters (i.e., spherical harmonics) remain exclusively optimized on the limited training views, leading to severe appearance overfitting. We propose VISTA-GS (Virtual Image Synthesis and Training Augmentation), a framework that synergizes MVS-based dense initialization with a physically-grounded virtual view augmentation strategy. Specifically, we position virtual cameras at strategic offsets around the original viewpoints and render virtual training images with binary validity masks via alpha-blending. By computing photometric losses exclusively within valid mask regions, VISTA-GS injects explicit angular constraints into the optimization process, effectively regularizing view-dependent appearance without relying on any external generative model. Experiments on the LLFF benchmark and a real-world LiDAR-scanned dataset demonstrate that our method achieves state-of-the-art NVS quality under sparse-view settings, with particularly significant improvements on challenging out-of-distribution viewpoints.</div>
+        <div class="paper-links">
+          <a class="btn primary" href="https://doi.org/10.5194/isprs-archives-XLIX-B2-2026-421-2026" target="_blank" rel="noopener">DOI</a>
+          <a class="btn" href="https://isprs-archives.copernicus.org/articles/XLIX-B2-2026/421/2026/" target="_blank" rel="noopener">Paper</a>
+          <a class="btn" href="https://isprs-archives.copernicus.org/articles/XLIX-B2-2026/421/2026/isprs-archives-XLIX-B2-2026-421-2026.pdf" target="_blank" rel="noopener">PDF</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="paper">
       <div class="paper-img"><img src="images/shen2025_jlp.png" alt="Cross-system scenario analysis framework" loading="lazy"></div>
       <div>
         <span class="paper-badge">JLPPI</span>
