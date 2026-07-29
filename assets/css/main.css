@@ -126,6 +126,9 @@ img{max-width:100%;display:block;}
 .prose strong{color:var(--text);}
 .prose a{text-decoration:underline;text-underline-offset:2px;}
 
+/* 大段文本两端对齐（最后一行仍左对齐；post-body 只作用于段落与列表项，避免标题/代码块继承） */
+.paper-abstract,.prose,.post-excerpt,.int-desc,.blog-side-top a,.post-body p,.post-body li{text-align:justify;}
+
 /* 研究兴趣 */
 .interests{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
 .interests li{border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;}
