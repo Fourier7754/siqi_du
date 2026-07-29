@@ -32,9 +32,15 @@
   </url>
   <url>
     <loc>https://fourier7754.github.io/siqi_du/blog/</loc>
-    <lastmod>2026-07-26</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://fourier7754.github.io/siqi_du/blog/on-knowing-things.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
   </url>
   <url>
     <loc>https://fourier7754.github.io/siqi_du/blog/conceptual-thinking-reflection.html</loc>

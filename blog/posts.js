@@ -9,6 +9,14 @@
    注意：必须用 .js（window.POSTS）而非 .json，file:// 下浏览器拦截 fetch。 */
 window.POSTS = [
   {
+    slug: "on-knowing-things",
+    title: "On Knowing Things: A Public Misjudgment",
+    date: "2026-07-29",
+    excerpt: "The stock market taught me that most of what I believed had never been tested, because ordinary life never prices a wrong idea. The 2023 claim that China would never catch up in AI failed for the same reason: a static, single-variable model applied to an adaptive system. Knowing a thing takes three layers of method—On Practice for where knowledge comes from, Munger's mental models for checking it, and On Contradiction for reading where it is going.",
+    category: "Opinion",
+    tags: ["epistemology", "mental-models", "ai-industry"]
+  },
+  {
     slug: "conceptual-thinking-reflection",
     title: "Some of the Agent Era's Biggest Advances Are Conceptual, Not Technical: From MCP to Skills",
     date: "2026-07-26",
