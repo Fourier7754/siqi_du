@@ -127,7 +127,7 @@ img{max-width:100%;display:block;}
 .prose a{text-decoration:underline;text-underline-offset:2px;}
 
 /* 大段文本两端对齐（最后一行仍左对齐；post-body 只作用于段落与列表项，避免标题/代码块继承） */
-.paper-abstract,.prose,.post-excerpt,.int-desc,.blog-side-top a,.post-body p,.post-body li{text-align:justify;}
+.paper-abstract,.prose,.post-excerpt,.post-body p,.post-body li{text-align:justify;}
 
 /* 研究兴趣 */
 .interests{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:12px;}
