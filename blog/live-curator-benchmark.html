@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LiveCuratorBench: First Results from a Live Agentic Meta-Knowledge Benchmark — Blog of Siqi Du (杜思齐)</title>
+<meta name="description" content="LiveCuratorBench is a closed, agentic benchmark for meta-knowledge extraction from long practice documents. First results across thirteen models: Grok 4.5 leads, DeepSeek v4 Flash follows at a tenth of the cost.">
+<link rel="canonical" href="https://fourier7754.github.io/siqi_du/blog/live-curator-benchmark.html">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Siqi Du">
+<meta property="og:title" content="LiveCuratorBench: First Results from a Live Agentic Meta-Knowledge Benchmark — Blog of Siqi Du">
+<meta property="og:description" content="LiveCuratorBench is a closed, agentic benchmark for meta-knowledge extraction from long practice documents. First results across thirteen models: Grok 4.5 leads, DeepSeek v4 Flash follows at a tenth of the cost.">
+<meta property="og:url" content="https://fourier7754.github.io/siqi_du/blog/live-curator-benchmark.html">
+<meta property="og:image" content="https://fourier7754.github.io/siqi_du/images/live-curator-benchmark-02.png">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "LiveCuratorBench: First Results from a Live Agentic Meta-Knowledge Benchmark",
+  "datePublished": "2026-08-01",
+  "author": {
+    "@type": "Person",
+    "name": "Siqi Du",
+    "url": "https://fourier7754.github.io/siqi_du/"
+  },
+  "keywords": ["Benchmark", "agents", "evaluation", "memory", "meta-knowledge"],
+  "url": "https://fourier7754.github.io/siqi_du/blog/live-curator-benchmark.html"
+}
+</script>
+<meta name="google-site-verification" content="fQZQD0EwLaSOrp3EbALt2rjxHEY9pUvWuh1fS96xgNk">
+<meta name="msvalidate.01" content="56D1B3DBCF345410DA9431AFE01788E7">
+<link rel="icon" href="../images/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+<link rel="manifest" href="../images/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/main.css?v=20260801b">
+<script src="../assets/vendor/highlight.min.js" defer></script>
+<script src="posts.js" defer></script>
+<script src="../assets/js/blog.js" defer></script>
+<script src="../assets/js/main.js" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.hljs) hljs.highlightAll();
+});
+</script>
+<script>
+/* GoatCounter 访问量统计：仅线上加载，本地 file:// 预览不计数 */
+if (location.protocol === "https:") {
+  var gc = document.createElement("script");
+  gc.setAttribute("data-goatcounter", "https://fourier7754.goatcounter.com/count");
+  gc.async = true;
+  gc.src = "//gc.zgo.at/count.js";
+  document.head.appendChild(gc);
+}
+</script>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <a class="masthead-logo" href="../index.html">Siqi Du</a>
+    <nav class="nav">
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+      <a href="../publications.html">Publications</a>
+      <a href="../education.html">Education</a>
+      <a href="../awards.html">Awards</a>
+      <a href="index.html" class="active">Blog</a>
+      <a class="nav-cv" title="CV PDF coming soon">CV</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+  <aside class="sidebar blog-sidebar">
+    <div class="blog-side-title"><a href="index.html">Blog</a></div>
+    <div class="blog-side-nav"></div>
+    <noscript>
+      <div class="blog-side-section">
+        <div class="blog-side-label">Categories</div>
+        <div class="blog-side-cats">
+          <a class="blog-side-cat" href="index.html"><span>All</span></a>
+          <a class="blog-side-cat" href="index.html?cat=Benchmark"><span>Benchmark</span></a>
+          <a class="blog-side-cat" href="index.html?cat=Research"><span>Research</span></a>
+          <a class="blog-side-cat" href="index.html?cat=Opinion"><span>Opinion</span></a>
+          <a class="blog-side-cat" href="index.html?cat=Review"><span>Review</span></a>
+        </div>
+      </div>
+    </noscript>
+  </aside>
+
+  <main class="content">
+    <a class="post-back" href="index.html">← Back to Blog</a>
+    <h1 class="page-title">LiveCuratorBench: First Results from a Live Agentic Meta-Knowledge Benchmark</h1>
+    <div class="post-meta" style="font-size:var(--fs-meta);color:var(--faint);margin-bottom:24px;">2026-08-01</div>
+
+    <div class="post-body">
+      <div class="post-tldr">
+        <div class="post-tldr-label">TL;DR</div>
+        <p>LiveCuratorBench is a closed, agentic benchmark that tests whether a model can explore a long practice document and extract reusable methodology while separating it from one-off execution details. Both the data and the ground truth are hand-labeled and never published, so the benchmark cannot be gamed. Across the first thirteen models, Grok 4.5 took first place; DeepSeek v4 Flash finished close behind at a tenth of the cost.</p>
+      </div>
+
+      <p>Agent memory systems are good at remembering what happened. The harder problem is turning what happened into knowledge that transfers: the requirements, strategies, and evaluation criteria that survive past a single session. A Curator agent I run does exactly this—given a long practice document, it extracts reusable methodology and keeps it apart from one-off execution details. To compare how different models drive this system, I needed a benchmark that models cannot prepare for, because anything public eventually leaks into training data. The result is LiveCuratorBench. This post introduces it and reports the first round of results; future rounds will be short updates that link back here.</p>
+
+      <p><img src="../images/live-curator-benchmark-01.png" alt="Curator agent architecture: source document flows into the Curator main agent, which exchanges with a Reasoner subagent, passes output acceptance checks, assembles a staged bundle, and reaches human review before commit; a bench-variant isolation box denies reads of ground truth, past runs, and rubric files" loading="lazy"></p>
+
+      <h2>The task</h2>
+
+      <p>The task is meta-knowledge extraction. The input is a long document containing a real working process: decisions, detours, corrections, and lessons. The model must pull out the knowledge that would still be useful on a different project—requirements, strategies, procedures, evaluation criteria, code templates—and correctly set aside the details that only mattered once.</p>
+
+      <p>LiveCuratorBench is agentic by design. The model under test does not answer questions about a document; it runs an agent loop over the document—deciding where to read next and what deserves extraction. A run therefore tests two abilities at once: agentic exploration of a long document, and the reasoning that judges what counts as knowledge. The expected output has two kinds of entries: common knowledge tied to the project at hand, and meta-knowledge that transfers to other projects.</p>
+
+      <p>Two design choices keep the benchmark honest. First, the dataset is closed: every source document and every ground-truth label is hand-annotated by me and never published, so no model can have memorized the answers. Second, scoring uses a 22-point rubric covering five dimensions—completeness of the extracted entries, correctness of their classification, level of abstraction, deduplication quality, and honesty of the exclusion list (what the model chose not to extract). The rubric went through three rounds of manual scoring calibration before any model was run.</p>
+
+      <p>Each model runs the full task independently three times, with the vendor's default parameters, and the average is reported.</p>
+
+      <h2>Evaluation criteria</h2>
+
+      <p>Scoring works probe by probe. A probe is one hand-labeled expectation: a knowledge point the agent should recover, or a quality property its output should have. Each probe is scored 0–2 against ground truth I annotate by hand. Probes fall into three groups:</p>
+
+      <table class="wrap">
+        <caption>Probe groups in the rubric</caption>
+        <tr><th>Group</th><th>What it checks</th></tr>
+        <tr><td>Core knowledge probes</td><td>Recovery of labeled meta-knowledge entries, at the right abstraction level</td></tr>
+        <tr><td>Quality checks</td><td>Honest sourcing; deduplication</td></tr>
+        <tr><td>Stretch probes</td><td>Subtle behaviors at the edge of current models</td></tr>
+      </table>
+
+      <p>Core probes carry most of the score, and the hardest of them are cleared only rarely, which makes them the real discriminators of model capability. A document's score is the sum over its probes; in the results below, scores are shown out of 22—the maximum on the document with the most probes—and individual probes appear by codename.</p>
+
+      <h2>The system under test</h2>
+
+      <p>The Curator agent is built on a modified opencode backend and follows a main-agent / subagent architecture. The main agent holds the full state of the task and does two kinds of extraction: the factual, project-level knowledge, and—reading across the whole document—the higher-order knowledge. The Reasoner subagent has a narrower and harder job: it mines the moments where the user's intent shifts. In a real trajectory the user might ask for a code change, then another, and then suddenly say "stop—let's first agree on a standard." That shift is itself evidence: it implies the earlier steps violated some convention or assumption. The knowledge latent in such intent transitions is exactly what the Reasoner is built to surface; its raw output is persisted with the run trace for auditing and scoring. A custom tool layer gives the agent a structured path from staged draft to human review to committed entry, and every run is fully replayable.</p>
+
+      <p>Evaluation runs use a dedicated bench variant of the agent. It is denied read access to historical results, ground truth, and scoring files, so runs are invisible to each other and the model never sees the answers.</p>
+
+      <h2>First results</h2>
+
+      <p>Thirteen models completed three runs each in two batches on 2026-07-31 and 2026-08-01: eight over official or subscription channels, five over the opencode go channel. Scores are averages out of 22.</p>
+
+      <p><img src="../images/live-curator-benchmark-02.png" alt="Bar chart of average scores, sorted: Grok 4.5 19.67, DeepSeek v4 Flash (official) 19.33, DeepSeek v4 Flash (opencode go) 19.00, GLM-5.2 18.67, Kimi K3 18.67, HY3 18.33, MiniMax M3 18.00, DeepSeek v4 Pro 17.67, GPT-5.6 Luna 17.33, Kimi K2.7 16.33, mimo 2.5 pro 16.00, Qwen 3.7 Plus 15.33, mimo 2.5 14.33" loading="lazy"></p>
+
+      <p><img src="../images/live-curator-benchmark-03.png" alt="Scatter plot of average cost per run versus average score with a dashed fit curve: vendors are encoded by color and marker shape; Grok 4.5 is labeled SOTA at top right (highest score, mid-range cost) and DeepSeek v4 Flash (official) is labeled best value at top left (near-top score at one of the lowest costs)" loading="lazy"></p>
+
+      <p>Thirteen models were tested in two batches on 2026-07-31 and 2026-08-01: eight over official or subscription channels (DeepSeek v4 Flash and v4 Pro, GLM-5.2, Kimi K3 and K2.7, HY3, mimo 2.5 and 2.5 pro), five over the opencode go channel (Grok 4.5, DeepSeek v4 Flash, MiniMax M3, GPT-5.6 Luna, Qwen 3.7 Plus). DeepSeek v4 Flash is the official version throughout—substantially stronger than the earlier preview—and it ran over both channels. Reasoning was switched on wherever the vendor exposes it (high / thinking / xhigh; Grok 4.5 and Qwen 3.7 Plus expose no reasoning setting). In the scatter plot, cost sits on a logarithmic axis: reading upward finds extraction quality—Grok 4.5 (SOTA) is the strongest extractor—while reading up and to the left finds the most quality per dollar, which is DeepSeek v4 Flash (best value). Marker shape and color encode the vendor, crosses mark the tier within a vendor (+ standard, ++ pro), and the dashed curve is a least-squares fit of score on cost. Cost sources, token accounting, and reporting quirks are documented in the appendix.</p>
+
+      <table>
+        <caption>Table 1 · Score, tokens, and cost per run (3-run averages, 2026-08-01)</caption>
+        <tr><th>Model</th><th>Score (/22)</th><th>Avg tokens/run</th><th>Avg cost/run</th></tr>
+        <tr><td>Grok 4.5</td><td><strong>19.67</strong></td><td>159.6K</td><td>$0.278 ¹</td></tr>
+        <tr><td>DeepSeek v4 Flash (official)</td><td><strong>19.33</strong></td><td>228.7K</td><td>$0.027 ¹</td></tr>
+        <tr><td>DeepSeek v4 Flash (opencode go)</td><td><strong>19.00</strong></td><td>396.9K</td><td>$0.035 ¹</td></tr>
+        <tr><td>GLM-5.2</td><td><strong>18.67</strong></td><td>196.1K</td><td>≈$0.24 ²</td></tr>
+        <tr><td>Kimi K3</td><td><strong>18.67</strong></td><td>154.0K</td><td>≈$0.48 ²</td></tr>
+        <tr><td>HY3</td><td><strong>18.33</strong></td><td>195.5K</td><td>$0.041 ¹</td></tr>
+        <tr><td>MiniMax M3</td><td><strong>18.00</strong></td><td>216.7K</td><td>$0.087 ¹</td></tr>
+        <tr><td>DeepSeek v4 Pro</td><td>17.67</td><td>225.9K</td><td>$0.051 ¹</td></tr>
+        <tr><td>GPT-5.6 Luna</td><td>17.33</td><td>285.2K</td><td>$0.034 ¹</td></tr>
+        <tr><td>Kimi K2.7</td><td>16.33</td><td>209.8K</td><td>$0.222 ¹</td></tr>
+        <tr><td>mimo 2.5 pro</td><td>16.00</td><td>185.2K</td><td>≈$0.048 ²</td></tr>
+        <tr><td>Qwen 3.7 Plus</td><td>15.33</td><td>178.6K</td><td>$0.068 ¹</td></tr>
+        <tr><td>mimo 2.5</td><td>14.33</td><td>256.3K</td><td>≈$0.013 ²</td></tr>
+      </table>
+
+      <h2>What the results show</h2>
+
+      <p>The ranking converged across all three runs. Grok 4.5 scored 19, 20, 20—first overall at 19.67. DeepSeek v4 Flash followed: 19.33 over the official endpoint (19, 20, 19) and 19.00 over opencode go (19, 19, 19). The 0.33 channel gap is within single-run noise, so switching channels does not require re-testing a model. The Flash ≥ Pro pattern held in every DeepSeek run, and mimo 2.5 finished last in every run.</p>
+
+      <p>Grok 4.5 is also the first model to clear the hardest core probe, G5, in every run. G5 rewards deriving why model-facing text must be treated as few-shot demonstrations—a contaminated input teaches contamination. Before Grok, 24 runs hit full marks on it only 4 times, all in the same round, which looked like an environment effect. Three independent hits upgrade G5 from a low-probability lottery to a real discriminator of model capability.</p>
+
+      <p>Score and cost still do not correlate. Grok leads at $0.278 per run; Flash (official) follows at $0.027—a tenth of the cost for 0.34 fewer points, which makes it the best value in the field (marked in the scatter plot above). The most expensive model by list price, Kimi K3 (≈$0.48 per run, output priced at ≈$14 per million tokens), only tied GLM-5.2—though it got there with the fewest tokens in the field, 154K per run. The cheapest run by estimate, mimo 2.5 at ≈$0.013, scored last.</p>
+
+      <p>Token spend does not buy score either. The two smallest budgets—Kimi K3 at 154K and Grok 4.5 at 159.6K—took two of the top three spots, while the largest budget (opencode go Flash, 396.9K) landed third. Generating more output did not help: MiniMax M3 produced the most output tokens and landed mid-table. The per-run breakdown:</p>
+
+      <table>
+        <caption>Table 2 · Token breakdown per run</caption>
+        <tr><th>Model</th><th>Input</th><th>Output</th><th>Reasoning</th><th>Cache read</th></tr>
+        <tr><td>Grok 4.5</td><td>53.2K</td><td>13.8K</td><td>7.8K</td><td>84.9K</td></tr>
+        <tr><td>DeepSeek v4 Flash (official)</td><td>78.9K</td><td>13.8K</td><td>42.7K</td><td>93.3K</td></tr>
+        <tr><td>DeepSeek v4 Flash (opencode go)</td><td>98.7K</td><td>33.0K</td><td>40.7K</td><td>224.5K</td></tr>
+        <tr><td>GLM-5.2</td><td>77.4K</td><td>12.6K</td><td>19.7K</td><td>86.4K</td></tr>
+        <tr><td>Kimi K3</td><td>61.1K</td><td>20.4K</td><td>n/r</td><td>72.5K</td></tr>
+        <tr><td>HY3</td><td>106.1K</td><td>14.8K</td><td>27.6K</td><td>46.9K</td></tr>
+        <tr><td>MiniMax M3</td><td>109.8K</td><td>41.5K</td><td>n/r</td><td>65.4K</td></tr>
+        <tr><td>DeepSeek v4 Pro</td><td>59.8K</td><td>14.6K</td><td>13.9K</td><td>137.7K</td></tr>
+        <tr><td>GPT-5.6 Luna</td><td>78.3K</td><td>22.8K</td><td>18.7K</td><td>165.4K</td></tr>
+        <tr><td>Kimi K2.7</td><td>82.6K</td><td>24.1K</td><td>7.3K</td><td>95.8K</td></tr>
+        <tr><td>mimo 2.5 pro</td><td>75.2K</td><td>19.1K</td><td>n/r</td><td>90.9K</td></tr>
+        <tr><td>Qwen 3.7 Plus</td><td>&lt;0.1K</td><td>20.9K</td><td>0</td><td>95.6K</td></tr>
+        <tr><td>mimo 2.5</td><td>54.1K</td><td>12.0K</td><td>6.1K</td><td>184.1K</td></tr>
+      </table>
+
+      <p>Caching barely helps this workload: cache reads cover only 30–70% of total input across models, because exploring a document keeps pulling in fresh, unseen context rather than re-reading a fixed prefix. "n/r" marks endpoints that do not report reasoning tokens (details in the appendix), not disabled reasoning.</p>
+
+      <p>Failure modes run in families. Both mimo variants under-extract—the pro produces too little, the non-pro mislabels the form. Qwen 3.7 Plus under-extracts unstably: its meta-knowledge count swung 9, 2, 5 across runs, the only model to drop below 15 in a single run. MiniMax M3's worst run repeated Kimi K2.7's signature error—extracting an entire entry from an unconfirmed proposal. Across vendors, the points lost cluster in two places: how honestly the exclusion list is followed, and how stable the production of high-abstraction entries is.</p>
+
+      <h2>What is next</h2>
+
+      <p>New models and new rounds will be reported as short result posts that link back to this page for the task description, so this post stays the standing reference for how the benchmark works.</p>
+
+      <h2>Appendix: measurement details</h2>
+
+      <p>Cost. ¹ Metered billing, taken from actual opencode session charges. ² Subscription channels have no per-run billing, so cost is estimated from official list prices in CNY (input / cache-hit / output rates), converted at ¥7.15 = $1; estimates exist only for cross-table comparison.</p>
+
+      <p>Tokens. Token counts come from local opencode session storage and sum the main-agent and subagent sessions: input + output + reasoning + cache read (cache writes were zero throughout). HY3's third round failed on first attempt (about 156K tokens, $0.042, not counted) and succeeded on retry.</p>
+
+      <p>Reporting quirks. Kimi K3, mimo 2.5 pro, and MiniMax M3 ran with reasoning enabled, but their endpoints do not return a reasoning field in usage reports, so those tokens are counted in Output and Table 2 shows n/r (not reported); their message streams show reasoning activity at the same scale as other models. Qwen 3.7 Plus has no reasoning variant, and its endpoint reports nearly all input as cache read, so its input figure (&lt;0.1K) is unreliable.</p>
+    </div>
+
+    <div class="post-end">
+      <div class="post-end-sep"></div>
+      <div class="post-taxonomy">
+        <a class="cat-badge" href="index.html?cat=Benchmark">Benchmark</a>
+        <a class="tag-chip" href="index.html?tag=agents">#agents</a>
+        <a class="tag-chip" href="index.html?tag=evaluation">#evaluation</a>
+        <a class="tag-chip" href="index.html?tag=memory">#memory</a>
+        <a class="tag-chip" href="index.html?tag=meta-knowledge">#meta-knowledge</a>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+<footer class="footer">
+  <span>© 2026 Siqi Du</span>
+  <span>Last updated: Jul 2026</span>
+</footer>
+
+</body>
+</html>

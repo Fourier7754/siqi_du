@@ -239,6 +239,13 @@ img{max-width:100%;display:block;}
 .copy-btn:hover{color:var(--text);border-color:var(--faint);}
 .copy-btn.copied{color:var(--text);border-color:var(--text);}
 .post-body ul,.post-body ol{margin:0 0 14px 20px;}
+.post-body table{border-collapse:separate;border-spacing:0;margin:0 auto 18px;font-size:var(--fs-body);border:1px solid #cfcfcf;border-radius:var(--radius);}
+.post-body caption{caption-side:top;text-align:left;font-size:var(--fs-meta);color:var(--faint);padding-bottom:6px;}
+.post-body th,.post-body td{padding:8px 16px;text-align:left;border-bottom:1px solid var(--border);font-variant-numeric:tabular-nums;white-space:nowrap;}
+.post-body table.wrap th,.post-body table.wrap td{white-space:normal;}
+.post-body th{color:var(--text);font-weight:600;background:var(--surface2);border-bottom:1px solid var(--faint);}
+.post-body td{color:var(--muted);}
+.post-body tr:last-child td{border-bottom:none;}
 .post-body a{text-decoration:underline;text-underline-offset:2px;}
 .post-body img{border-radius:var(--radius);border:1px solid var(--border);}
 .post-tldr{

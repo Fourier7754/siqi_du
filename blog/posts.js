@@ -9,6 +9,22 @@
    注意：必须用 .js（window.POSTS）而非 .json，file:// 下浏览器拦截 fetch。 */
 window.POSTS = [
   {
+    slug: "live-curator-benchmark",
+    title: "LiveCuratorBench: First Results from a Live Agentic Meta-Knowledge Benchmark",
+    date: "2026-08-01",
+    excerpt: "LiveCuratorBench is a closed, agentic benchmark that tests whether a model can explore a long practice document and extract reusable methodology while separating it from one-off execution details. Both the data and the ground truth are hand-labeled and never published, so the benchmark cannot be gamed. Across the first thirteen models, Grok 4.5 took first place; DeepSeek v4 Flash finished close behind at a tenth of the cost.",
+    category: "Benchmark",
+    tags: ["agents", "evaluation", "memory", "meta-knowledge"]
+  },
+  {
+    slug: "deepseek-v4-flash-best-value",
+    title: "DeepSeek v4 Flash (Official): Best Value on LiveCuratorBench",
+    date: "2026-08-01",
+    excerpt: "On LiveCuratorBench, the official version of DeepSeek v4 Flash scores 19.33/22—second only to Grok 4.5—at $0.027 per run, about a tenth of Grok's cost: the best performance per dollar in the thirteen-model field.",
+    category: "Benchmark",
+    tags: ["agents", "evaluation", "memory", "meta-knowledge"]
+  },
+  {
     slug: "on-knowing-things",
     title: "On Knowing Things: A Public Misjudgment",
     date: "2026-07-29",

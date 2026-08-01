@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hello World — Blog of Siqi Du (杜思齐)</title>
-<meta name="description" content="Hello World — the first post on the blog of Siqi Du (杜思齐).">
-<link rel="canonical" href="https://fourier7754.github.io/siqi_du/blog/hello-world.html">
+<title>DeepSeek v4 Flash (Official): Best Value on LiveCuratorBench — Blog of Siqi Du (杜思齐)</title>
+<meta name="description" content="On LiveCuratorBench, the official version of DeepSeek v4 Flash scores 19.33/22—second only to Grok 4.5—at $0.027 per run, about a tenth of Grok's cost: the best performance per dollar in the thirteen-model field.">
+<link rel="canonical" href="https://fourier7754.github.io/siqi_du/blog/deepseek-v4-flash-best-value.html">
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Siqi Du">
-<meta property="og:title" content="Hello World — Blog of Siqi Du">
-<meta property="og:description" content="The first post on Siqi Du's blog.">
-<meta property="og:url" content="https://fourier7754.github.io/siqi_du/blog/hello-world.html">
-<meta property="og:image" content="https://fourier7754.github.io/siqi_du/images/avatar.jpg">
+<meta property="og:title" content="DeepSeek v4 Flash (Official): Best Value on LiveCuratorBench — Blog of Siqi Du">
+<meta property="og:description" content="On LiveCuratorBench, the official version of DeepSeek v4 Flash scores 19.33/22—second only to Grok 4.5—at $0.027 per run, about a tenth of Grok's cost: the best performance per dollar in the thirteen-model field.">
+<meta property="og:url" content="https://fourier7754.github.io/siqi_du/blog/deepseek-v4-flash-best-value.html">
+<meta property="og:image" content="https://fourier7754.github.io/siqi_du/images/live-curator-benchmark-03.png">
 <meta name="twitter:card" content="summary">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "Hello World",
-  "datePublished": "2026-07-22",
+  "headline": "DeepSeek v4 Flash (Official): Best Value on LiveCuratorBench",
+  "datePublished": "2026-08-01",
   "author": {
     "@type": "Person",
     "name": "Siqi Du",
     "url": "https://fourier7754.github.io/siqi_du/"
   },
-  "keywords": ["Opinion", "meta"],
-  "url": "https://fourier7754.github.io/siqi_du/blog/hello-world.html"
+  "keywords": ["Benchmark", "agents", "evaluation", "memory", "meta-knowledge"],
+  "url": "https://fourier7754.github.io/siqi_du/blog/deepseek-v4-flash-best-value.html"
 }
 </script>
 <meta name="google-site-verification" content="fQZQD0EwLaSOrp3EbALt2rjxHEY9pUvWuh1fS96xgNk">
@@ -97,36 +97,27 @@ if (location.protocol === "https:") {
 
   <main class="content">
     <a class="post-back" href="index.html">← Back to Blog</a>
-    <h1 class="page-title">Hello World</h1>
-    <div class="post-meta" style="font-size:var(--fs-meta);color:var(--faint);margin-bottom:24px;">2026-07-22</div>
+    <h1 class="page-title">DeepSeek v4 Flash (Official): Best Value on LiveCuratorBench</h1>
+    <div class="post-meta" style="font-size:var(--fs-meta);color:var(--faint);margin-bottom:24px;">2026-08-01</div>
 
     <div class="post-body">
-      <p>Hello World.</p>
-      <p>This blog is officially open. I will use this space to write notes on agent systems, AI4Science, representation learning, and the everyday workflow of doing research—things that are too informal for a paper but worth writing down.</p>
-      <p>More posts are on the way.</p>
-      <h2>Hello, World, over the years</h2>
-      <p>Every programmer starts here. Then things get out of hand.</p>
-      <pre><code class="language-python"># Year 1: "Programming is easy."
-print("Hello, World!")
+      <p>On <a href="live-curator-benchmark.html">LiveCuratorBench</a>, my closed agentic benchmark for meta-knowledge extraction, the official version of DeepSeek v4 Flash scored 19.33/22 over the official endpoint and 19.00/22 over opencode go—second only to Grok 4.5 (19.67)—at $0.027 per run, about a tenth of Grok's cost. That makes it the best performance per dollar in the thirteen-model field. The official version is substantially stronger than the earlier preview, and the gap between the two channels (0.33 points) is within single-run noise.</p>
 
-# Year 5: "We should make this extensible."
-class Greeting(ABC):
-    @abstractmethod
-    def render(self) -> str: ...
+      <p><img src="../images/live-curator-benchmark-02.png" alt="Bar chart of average scores across thirteen models on LiveCuratorBench: Grok 4.5 leads at 19.67, DeepSeek v4 Flash follows at 19.33 (official endpoint) and 19.00 (opencode go)" loading="lazy"></p>
 
-class GreetingFactory:
-    @staticmethod
-    def create(locale: str = "en") -> Greeting:
-        return {"en": EnglishGreeting}.get(locale, EnglishGreeting)()
+      <p><img src="../images/live-curator-benchmark-03.png" alt="Scatter plot of cost per run versus score: DeepSeek v4 Flash (official) is labeled best value at top left—near-top score at one of the lowest costs; Grok 4.5 is labeled SOTA at top right" loading="lazy"></p>
 
-# Year 10: print("Hello, World!")</code></pre>
+      <p>Task description, evaluation criteria, and the full thirteen-model results are on the <a href="live-curator-benchmark.html">LiveCuratorBench main page</a>.</p>
     </div>
 
     <div class="post-end">
       <div class="post-end-sep"></div>
       <div class="post-taxonomy">
-        <a class="cat-badge" href="index.html?cat=Opinion">Opinion</a>
-        <a class="tag-chip" href="index.html?tag=meta">#meta</a>
+        <a class="cat-badge" href="index.html?cat=Benchmark">Benchmark</a>
+        <a class="tag-chip" href="index.html?tag=agents">#agents</a>
+        <a class="tag-chip" href="index.html?tag=evaluation">#evaluation</a>
+        <a class="tag-chip" href="index.html?tag=memory">#memory</a>
+        <a class="tag-chip" href="index.html?tag=meta-knowledge">#meta-knowledge</a>
       </div>
     </div>
 
